@@ -1,3 +1,8 @@
-@use 'variables.scss';
-@use 'reset.scss';
-@use 'layout.scss';
+@use "../sass/abstracts/mixins.scss";
+@use "../sass/abstracts/variables.scss";
+@use "../sass/base/reset.scss";
+@use "../sass/base/base.scss";
+@use "../sass/layout/aside.scss";
+@use "../sass/layout/footer.scss";
+@use "../sass/layout/header.scss";
+@use "../sass/components/button.scss";
