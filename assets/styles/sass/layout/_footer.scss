@@ -1,18 +1,78 @@
+@use "../abstracts/mixins.scss" as *;
+@use "../abstracts/variables.scss" as *;
+
 footer {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
 
+    // Desktop Player Bar
     .player-wrapper {
         background-color: #333842;
         padding: 15px 20px;
         display: flex;
+        align-items: center;
         justify-content: space-between;
         border-radius: 10px;
         margin: 7px;
+
+        // Left: transport controls
+        .player-left {
+            @include flex-align-center();
+            gap: 20px;
+        }
+
+        // Center: progress bar + song info
+        .player-center {
+            @include flex-align-center();
+            gap: 10px;
+            padding: 0 20px;
+
+            .time-current,
+            .time-total {
+                font-size: 12px;
+                color: $gray-color;
+            }
+
+            .btn-volume {
+                @include flex-align-justify-center();
+            }
+
+            .player-song-info {
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+
+                .song-title {
+                    color: $light-gray-color;
+                    font-size: 14px;
+                }
+
+                .song-artist,
+                .song-album {
+                    color: $gray-color;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        // Right: action buttons
+        .player-right {
+            @include flex-align-center();
+
+            .player-actions {
+                @include flex-align-center();
+
+                // gap: 20px;
+                img {
+                    padding: 8px;
+                }
+            }
+        }
     }
 
+    // Mobile Nav
     nav {
         background: linear-gradient(to bottom, rgba(17, 17, 17, 0.85) 0%, #111111 43%);
         padding: 15px 0 24px 0;
