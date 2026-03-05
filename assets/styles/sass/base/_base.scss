@@ -1,25 +1,29 @@
 @use "../abstracts/variables.scss" as *;
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  font-size: 62.5%;
+    font-size: 62.5%;
 }
 
 body {
-  font-family: "Satoshi-Regular", sans-serif;
-  font-size: 1.6rem;
-  background-color: $dark-bg;
-  margin: 0 auto;
-  overflow-x: hidden;
+    font-family: "Satoshi-Regular", sans-serif;
+    font-size: 1.6rem;
+    background-color: $dark-bg;
+    margin: 0 auto;
+    overflow-x: hidden;
 }
 
 .layout {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-wrapper {
+    width: calc(100% - 259px);
 }

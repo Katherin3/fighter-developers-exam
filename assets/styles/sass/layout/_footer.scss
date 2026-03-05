@@ -2,10 +2,10 @@
 @use "../abstracts/variables.scss" as *;
 
 footer {
-    position: fixed;
+    position: sticky;
     bottom: 0;
     right: 0;
-    width: calc(100% - 259px);
+    width: 100%;
 
     // Desktop Player Bar
     .player-wrapper {
