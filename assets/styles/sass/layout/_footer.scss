@@ -2,10 +2,10 @@
 @use "../abstracts/variables.scss" as *;
 
 footer {
-    position: sticky;
+    position: fixed;
     bottom: 0;
     right: 0;
-    width: 100%;
+    width: calc(100% - 259px);
 
     // Desktop Player Bar
     .player-wrapper {
@@ -17,17 +17,10 @@ footer {
         border-radius: 10px;
         margin: 7px 7px 0 7px;
 
-        // Left: transport controls
+        // Left: transport controls + progress bar 
         .player-left {
             @include flex-align-center();
             gap: 20px;
-        }
-
-        // Center: progress bar + song info
-        .player-center {
-            @include flex-align-center();
-            gap: 10px;
-            padding: 0 20px;
 
             .time-current,
             .time-total {
@@ -38,6 +31,59 @@ footer {
             .btn-volume {
                 @include flex-align-justify-center();
             }
+
+            .progress-bar {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 317px;
+                height: 4px;
+                background: transparent;
+                outline: none;
+                cursor: pointer;
+            }
+
+            /* Track (WebKit) */
+            .progress-bar::-webkit-slider-runnable-track {
+                height: 4px;
+                background: #4d4d4d;
+                border-radius: 2px;
+                overflow: hidden;
+            }
+
+            /* Thumb (WebKit) — invisible but casts a white shadow to the left */
+            .progress-bar::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 0;
+                height: 4px;
+                box-shadow: -400px 0 0 400px #ffffff;
+            }
+
+            /* Firefox — has native progress styling */
+            .progress-bar::-moz-range-track {
+                height: 4px;
+                background: #4d4d4d;
+                border-radius: 2px;
+            }
+
+            .progress-bar::-moz-range-progress {
+                background: #ffffff;
+                height: 4px;
+                border-radius: 2px;
+            }
+
+            .progress-bar::-moz-range-thumb {
+                width: 0;
+                height: 0;
+                border: none;
+            }
+        }
+
+        // Center: song info
+        .player-center {
+            @include flex-align-center();
+            gap: 10px;
+            padding: 0 20px;
 
             .player-song-info {
                 display: flex;
