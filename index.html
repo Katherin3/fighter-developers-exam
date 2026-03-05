@@ -89,8 +89,6 @@
                             </figure>
                         </a>
                     </li>
-
-
                     <li>
                         <a href="#">
                             <figure>
@@ -98,14 +96,12 @@
                                 <figcaption>Artists</figcaption>
                             </figure>
                         </a>
-
                     </li>
                 </ul>
-
             </nav>
         </aside>
         <!-- pavle's sections -->
-        <div class="content-wrapper">
+        <div class="main-wrapper">
             <header class="top-header">
                 <nav class="main-nav">
                     <ul>
@@ -117,7 +113,7 @@
                                 </figure>
                             </a>
                         </li>
-                        <li>
+                        <li class="discover">
                             <a href="#">
                                 <figure>
                                     <img src="assets/images/icon-images/discover_icon.svg" alt="discover">
@@ -125,7 +121,7 @@
                                 </figure>
                             </a>
                         </li>
-                        <li>
+                        <li class="search">
                             <a href="#">
                                 <figure>
                                     <img src="assets/images/icon-images/search_icon.svg" alt="search">
@@ -147,6 +143,8 @@
                     </div>
                 </div>
             </header>
+            
+            <div class="content-body">
             <!-- gio's sections -->
             <main class="main-content">
                 <!-- The first section of the main content, the first section uses the navigation bar and part of the article cards. -->
@@ -164,110 +162,266 @@
                     <div class="home-page-section__cards">
                         <div>
                             <h2>Made For You</h2>
-                            <button> <img src="/assets/images/icon-images/Dots.png" alt="Dots"></button>
-                            <button> <img src="/assets/images/icon-images/right-arrow.png" alt="right-arrow"></button>
-                            <button><img src="/assets/images/icon-images/left-arrow.png" alt="left-arrow"></button>
+                            <button><img src="./assets/images/icon-images/Dots.png" alt="Dots"></button>
+                            <button><img src="./assets/images/icon-images/right-arrow.png" alt="right-arrow"></button>
+                            <button><img src="./assets/images/icon-images/left-arrow.png" alt="left-arrow"></button>
                         </div>
                         <!-- Article title used in the card section, arrow buttons to navigate to the article, main photo, photo title and description -->
-                        <!-- Start of article -->
-                        <article>
-                            <div></div>
-                            <div></div>
-                            <figure>
-                                <img src="assets/images/layout-images/Discover-Weekly.png" alt="Discover-Weekly">
-                                <figcaption>Discover Weekly</figcaption>
-                                <span>50</span>
-                                <p>Your weekly mix tape of fresh music.</p>
-                            </figure>
-                            <!-- End of article -->
-                        </article>
-                        <!-- Start of article -->
-                        <article>
-                            <div></div>
-                            <div></div>
-                            <figure>
-                                <img src="assets/images/layout-images/Daily Mix 1.png" alt="Discover-Weekly">
-                                <figcaption>Daily Mix 1</figcaption>
-                                <span>50</span>
-                                <p>Link-in Park, System Of A Down, Coal Chamber...</p>
-                            </figure>
-                            <!-- End of article -->
-                        </article>
-                        <!-- Start of article -->
-                        <article>
-                            <div></div>
-                            <div></div>
-                            <figure>
-                                <img src="assets/images/layout-images/Daily Mix 2.png" alt="Discover-Weekly">
-                                <figcaption>Daily Mix 2</figcaption>
-                                <span>50</span>
-                                <p>Avril Lavigne, Lorde, Charli XCX and more</p>
-                            </figure>
-                            <!-- End of article -->
-                        </article>
-                        <!-- Start of article -->
-                        <article>
-                            <div></div>
-                            <div></div>
-                            <figure>
-                                <img src="assets/images/layout-images/Daily Mix 3.png" alt="Discover-Weekly">
-                                <figcaption>Daily Mix 3</figcaption>
-                                <span>50</span>
-                                <p>The Strokes, Martin Garrix, MGMT and more</p>
-                            </figure>
-                            <!-- End of article -->
-                        </article>
-                        <!-- Start of article -->
-                        <article>
-                            <div></div>
-                            <div></div>
-                            <figure>
-                                <img src="assets/images/layout-images/Daily Mix 4.png" alt="Discover-Weekly">
-                                <figcaption>Daily Mix 4</figcaption>
-                                <span>50</span>
-                                <p>Chuck Berry, Elvis Presley, Roy Orbison and more</p>
-                            </figure>
-                            <!-- End of article -->
-                        </article>
-                        <!-- Start of article -->
-                        <article>
-                            <div></div>
-                            <div></div>
-                            <figure>
-                                <img src="assets/images/layout-images/Daily Mix 5.png" alt="Discover-Weekly">
-                                <figcaption>Daily Mix 5</figcaption>
-                                <span>50</span>
-                                <p>Frank Sinatra, Gerhard Trede, Dean Martin and more</p>
-                            </figure>
-                            <!-- End of article -->
-                        </article>
-                        <!-- Start of article -->
-                        <article>
-                            <div></div>
-                            <div></div>
-                            <figure>
-                                <img src="assets/images/layout-images/Nirvana Radio.png" alt="Discover-Weekly">
-                                <figcaption>Nirvana Radio</figcaption>
-                                <span>50</span>
-                                <p>The Strokes, Martin Garrix, MGMT and more</p>
-                            </figure>
-                            <!-- End of article -->
-                        </article>
-                        <!-- Start of article -->
-                        <article>
-                            <div></div>
-                            <div></div>
-                            <figure>
-                                <img src="assets/images/layout-images/Fall Out Boy Radio.png" alt="Discover-Weekly">
-                                <figcaption>Fall Out Boy Radio</figcaption>
-                                <span>50</span>
-                                <p>With Panic! At The Disco, The All-American Rejects,...</p>
-                            </figure>
-                            <!-- End of article -->
-                        </article>
+                        <div>
+                            <!-- Start of article -->
+                            <article>
+                                <div></div>
+                                <div></div>
+                                <figure>
+                                    <img src="./assets/images/layout-images/Discover-Weekly.png" alt="Discover-Weekly">
+                                    <figcaption>Discover Weekly</figcaption>
+                                    <span>50</span>
+                                    <p>Your weekly mix tape of fresh music.</p>
+                                </figure>
+                                <!-- End of article -->
+                            </article>
+                            <!-- Start of article -->
+                            <article>
+                                <div></div>
+                                <div></div>
+                                <figure>
+                                    <img src="./assets/images/layout-images/Daily Mix 1.png" alt="Daily Mix 1">
+                                    <figcaption>Daily Mix 1</figcaption>
+                                    <span>50</span>
+                                    <p>Link-in Park, System Of A Down, Coal Chamber...</p>
+                                </figure>
+                                <!-- End of article -->
+                            </article>
+                            <!-- Start of article -->
+                            <article>
+                                <div></div>
+                                <div></div>
+                                <figure>
+                                    <img src="./assets/images/layout-images/Daily Mix 2.png" alt="Daily Mix 2<">
+                                    <figcaption>Daily Mix 2</figcaption>
+                                    <span>50</span>
+                                    <p>Avril Lavigne, Lorde, Charli XCX and more</p>
+                                </figure>
+                                <!-- End of article -->
+                            </article>
+                            <!-- Start of article -->
+                            <article>
+                                <div></div>
+                                <div></div>
+                                <figure>
+                                    <img src="./assets/images/layout-images/Daily Mix 3.png" alt="Daily Mix 3">
+                                    <figcaption>Daily Mix 3</figcaption>
+                                    <span>50</span>
+                                    <p>The Strokes, Martin Garrix, MGMT and more</p>
+                                </figure>
+                                <!-- End of article -->
+                            </article>
+                            <!-- Start of article -->
+                            <article>
+                                <div></div>
+                                <div></div>
+                                <figure>
+                                    <img src="./assets/images/layout-images/Daily Mix 4.png" alt="Daily Mix 4">
+                                    <figcaption>Daily Mix 4</figcaption>
+                                    <span>50</span>
+                                    <p>Chuck Berry, Elvis Presley, Roy Orbison and more</p>
+                                </figure>
+                                <!-- End of article -->
+                            </article>
+                            <!-- Start of article -->
+                            <article>
+                                <div></div>
+                                <div></div>
+                                <figure>
+                                    <img src="./assets/images/layout-images/Daily Mix 5.png" alt="Discover-Weekly">
+                                    <figcaption>Daily Mix 5</figcaption>
+                                    <span>50</span>
+                                    <p>Frank Sinatra, Gerhard Trede, Dean Martin and more</p>
+                                </figure>
+                                <!-- End of article -->
+                            </article>
+                            <!-- Start of article -->
+                            <article>
+                                <div></div>
+                                <div></div>
+                                <figure>
+                                    <img src="./assets/images/layout-images/Nirvana Radio.png" alt="Discover-Weekly">
+                                    <figcaption>Nirvana Radio</figcaption>
+                                    <span>50</span>
+                                    <p>The Strokes, Martin Garrix, MGMT and more</p>
+                                </figure>
+                                <!-- End of article -->
+                            </article>
+                            <!-- Start of article -->
+                            <article>
+                                <div></div>
+                                <div></div>
+                                <figure>
+                                    <img src="./assets/images/layout-images/Fall Out Boy Radio.png"
+                                        alt="Discover-Weekly">
+                                    <figcaption>Fall Out Boy Radio</figcaption>
+                                    <span>50</span>
+                                    <p>With Panic! At The Disco, The All-American Rejects,...</p>
+                                </figure>
+                                <!-- End of article -->
+                            </article>
+                        </div>
+                    </div>
+                    <div class="home-page-section__cards">
+                        <div>
+                            <h2>Your top mixes</h2>
+                            <button><img src="./assets/images/icon-images/Dots.png" alt="Dots"></button>
+                            <button><img src="./assets/images/icon-images/right-arrow.png" alt="right-arrow"></button>
+                            <button><img src="./assets/images/icon-images/left-arrow.png" alt="left-arrow"></button>
+                        </div>
+                        <!-- Article title used in the card section, arrow buttons to navigate to the article, main photo, photo title and description -->
+                        <div>
+                            <!-- Start of article -->
+                            <article>
+                                <div></div>
+                                <div></div>
+                                <figure>
+                                    <img src="assets/images/layout-images/Rock Mix.png" alt="Rock Mix">
+                                    <figcaption>Rock Mix</figcaption>
+                                    <span>50</span>
+                                    <p>Red Hot Chili Peppers, R.E.M., Guns N’ Roses...</p>
+                                </figure>
+                                <!-- End of article -->
+                            </article>
+                            <!-- Start of article -->
+                            <article>
+                                <div></div>
+                                <div></div>
+                                <figure>
+                                    <img src="assets/images/layout-images/Chill Mix.png" alt="Chill Mix">
+                                    <figcaption>Chill Mix</figcaption>
+                                    <span>50</span>
+                                    <p>MF DOOM, Daft Punk, The Chainsmokers, and more</p>
+                                </figure>
+                                <!-- End of article -->
+                            </article>
+                            <!-- Start of article -->
+                            <article>
+                                <div></div>
+                                <div></div>
+                                <figure>
+                                    <img src="assets/images/layout-images/Pop Mix.png" alt="Pop Mix">
+                                    <figcaption>Pop Mix</figcaption>
+                                    <span>50</span>
+                                    <p>Red Hot Chili Peppers, R.E.M., Guns N’ Roses...</p>
+                                </figure>
+                                <!-- End of article -->
+                            </article>
+                            <!-- Start of article -->
+                            <article>
+                                <div></div>
+                                <div></div>
+                                <figure>
+                                    <img src="assets/images/layout-images/Daft Punk Mix.png" alt="Daft Punk Mix">
+                                    <figcaption>Daft Punk Mix</figcaption>
+                                    <span>50</span>
+                                    <p>Daft Punk, MGMT, Muse, and more</p>
+                                </figure>
+                                <!-- End of article -->
+                            </article>
+                            <!-- Start of article -->
+                            <article>
+                                <div></div>
+                                <div></div>
+                                <figure>
+                                    <img src="assets/images/layout-images/Happy Mix.png" alt="Happy Mix">
+                                    <figcaption>Happy Mix</figcaption>
+                                    <span>50</span>
+                                    <p>The Turtles, Van Morrison, ABBA and more</p>
+                                </figure>
+                                <!-- End of article -->
+                            </article>
+                            <!-- Start of article -->
+                            <article>
+                                <div></div>
+                                <div></div>
+                                <figure>
+                                    <img src="assets/images/layout-images/David Bowie Mix.png" alt="David Bowie Mix">
+                                    <figcaption>David Bowie Mix</figcaption>
+                                    <span>50</span>
+                                    <p>Soft Cell, The Who and The Clash</p>
+                                </figure>
+                                <!-- End of article -->
+                            </article>
+                            <!-- Start of article -->
+                            <article>
+                                <div></div>
+                                <div></div>
+                                <figure>
+                                    <img src="assets/images/layout-images/Upbeat Mix.png" alt="Upbeat Mix">
+                                    <figcaption>Upbeat Mix</figcaption>
+                                    <span>50</span>
+                                    <p>Kylie Minogue, Charli XCX, Cage The Elephant and...</p>
+                                </figure>
+                                <!-- End of article -->
+                            </article>
+                            <!-- Start of article -->
+                            <article>
+                                <div></div>
+                                <div></div>
+                                <figure>
+                                    <img src="assets/images/layout-images/60s Mix.png" alt="60s Mix">
+                                    <figcaption>60s Mix</figcaption>
+                                    <span>50</span>
+                                    <p>Chuck Berry, Skeeter David, Van Morrison and...</p>
+                                </figure>
+                                <!-- End of article -->
+                            </article>
+                        </div>
+                    </div>
+                    <div class="home-page-section__cards">
+                        <div>
+                            <h2>Your favorite artists</h2>
+                            <button><img src="./assets/images/icon-images/Dots.png" alt="Dots"></button>
+                            <button><img src="./assets/images/icon-images/right-arrow.png" alt="right-arrow"></button>
+                            <button><img src="./assets/images/icon-images/left-arrow.png" alt="left-arrow"></button>
+                        </div>
+                        <!-- Article title used in the card section, arrow buttons to navigate to the article, main photo, photo title-->
+                        <div>
+                            <!-- Start of article -->
+                            <article>
+                                <figure>
+                                    <img src="./assets/images/layout-images/Gun's N' Roses.png" alt="Gun's N' Roses">
+                                    <figcaption>Gun's N' Roses</figcaption>
+                                </figure>
+                                <!-- End of article -->
+                            </article>
+                            <!-- Start of article -->
+                            <article>
+                                <figure>
+                                    <img src="./assets/images/layout-images/Dufft Punk.png" alt="Duft Punk">
+                                    <figcaption>Duft Punk</figcaption>
+                                </figure>
+                                <!-- End of article -->
+                            </article>
+                            <!-- Start of article -->
+                            <article>
+                                <figure>
+                                    <img src="./assets/images/layout-images/David Bowie.png" alt="David Bowie">
+                                    <figcaption>David Bowie</figcaption>
+                                </figure>
+                                <!-- End of article -->
+                            </article>
+                        </div>
                     </div>
                 </section>
             </main>
+            </div>
+            <footer>
+                <!-- Start Desktop Footer Player -->
+                <div class="player-wrapper">
+                    <!-- Left: Playback Controls -->
+                            <span class="song title">6h Rockstar</span> o <span class="artist">Post Malone</span>
+                        </div>
+                    </div>
+                </nav>
+            </aside>
+            </div>
             <footer>
                 <!-- Start Desktop Footer Player -->
                 <div class="player-wrapper">

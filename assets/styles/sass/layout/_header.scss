@@ -4,17 +4,35 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 11px;
+    padding-bottom: 15px;
+    padding-top: 0px;
+    width: 100%;
+    height: 40.41px;
+    margin-bottom: 15px;
     background-color: $dark-bg;
 
     .main-nav ul {
         display: flex;
         gap: 15px; 
+        width: 773px;
+        height: 40.41px;
+        padding-top: 25px;
+        margin-bottom: 10px;
 
         li a {
             color: #a0a0a0;
             text-align: center;
+            width: 210px;
+            height: 40.41px;
+            margin-bottom: 10px;
+            background-color: transparent;
             transition: color 0.3s ease;
+            &:hover {
+                background-color: $gray-color;
+                color: white;
+            }
+
 
             figure {
                 display: flex;
@@ -23,8 +41,13 @@
             }
 
             img {
-                width: 40px;
-                height: 40px;
+                width: 40.41px;
+                height: 40.41px;
+                padding: 8.42px;
+                &:hover {
+                    transform: scale(1.2);
+                    filter: brightness(1.5) invert(1);
+                }
             }
 
             figcaption {
@@ -36,6 +59,13 @@
 
         li.active a {
             color: #ffffff; 
+            width: 210px;
+        }
+        li.discover a {
+            width: 210px;
+        }
+        li.serch a {
+            width: 350px;
         }
     }
 
@@ -43,25 +73,37 @@
         display: flex;
         align-items: center;
         gap: 25px;
+        width: 722px;
+        height: 40.41px;
+        padding-top: 25px;
+        justify-content: flex-end;
 
         .action-icons {
             display: flex;
             align-items: center;
             gap: 20px; 
+            padding-top: 25px;
 
             img {
-                width: 40px;
-                height: 40px;
+                width: 40.41px;
+                height: 40.41px;
                 opacity: 0.8;
                 &:hover { opacity: 1; }
             }
         }
 
         .logo .user-logo {
-            width: 40px;
-            height: 40px;
+            width: 40.41px;
+            height: 40.41px;
             border-radius: 50%;
             object-fit: cover;
         }
+        .logo { 
+            padding-top: 25px;
+        }
+    }
+
+    @media (max-width: 390px) {
+        display: none;
     }
 }
