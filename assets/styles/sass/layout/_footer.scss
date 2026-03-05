@@ -2,9 +2,9 @@
 @use "../abstracts/variables.scss" as *;
 
 footer {
-    position: fixed;
+    position: sticky;
     bottom: 0;
-    left: 0;
+    right: 0;
     width: 100%;
 
     // Desktop Player Bar
@@ -15,7 +15,7 @@ footer {
         align-items: center;
         justify-content: space-between;
         border-radius: 10px;
-        margin: 7px;
+        margin: 7px 7px 0 7px;
 
         // Left: transport controls
         .player-left {
