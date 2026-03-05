@@ -60,6 +60,7 @@
   .home-page-section__cards {
     width: 100%;
     height: auto;
+    margin-bottom: 30px;
     div:nth-child(1) {
       width: 100%;
       height: auto;
@@ -97,6 +98,7 @@
       justify-content: space-between;
       flex-shrink: 0;
       overflow: hidden;
+      gap: 11px;
       // Article Section Style
       article {
         width: 170px;
@@ -104,6 +106,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
         > div:nth-child(1) {
           width: 133px;
           height: 3px;
@@ -235,6 +238,10 @@
         }
       }
     }
+    div:nth-child(2):after {
+      content: "";
+      flex: auto;
+    }
   }
   .home-page-section__cards:nth-child(3) {
     div:nth-child(2) {
@@ -335,7 +342,6 @@
       }
     }
     div:nth-child(2) {
-      justify-content: start;
       margin-top: 15px;
       // Article Section Style
       article {
@@ -362,6 +368,141 @@
             color: #e0e0e0;
             display: inline-block;
           }
+        }
+      }
+    }
+  }
+  .home-page-section__cards:nth-child(5) {
+    div:nth-child(2) {
+      article {
+        div:nth-child(1) {
+          width: 154px;
+          height: 6px;
+        }
+      }
+      article:nth-child(1) {
+        > div:nth-child(1) {
+          background-color: rgba(166, 145, 116, 0.3);
+        }
+        span:nth-child(3) {
+          color: #898989;
+        }
+        p {
+          color: #898989;
+        }
+      }
+      article:nth-child(2) {
+        > div:nth-child(1) {
+          background-color: rgba(187, 180, 216, 0.3);
+        }
+        span:nth-child(3) {
+          color: #898989;
+        }
+      }
+      article:nth-child(3) {
+        > div:nth-child(1) {
+          background-color: rgba(117, 164, 150, 0.3);
+        }
+        span:nth-child(3) {
+          color: #898989;
+        }
+      }
+      article:nth-child(4) {
+        > div:nth-child(1) {
+          background-color: rgba(98, 120, 177, 0.3);
+        }
+        span:nth-child(3) {
+          color: #898989;
+        }
+      }
+    }
+  }
+  .home-page-section__cards:nth-child(6) {
+    div:nth-child(2) {
+      article {
+        img {
+          height: 218.57px;
+        }
+        p {
+          color: #898989;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+  .home-page-section__cards:nth-child(7) {
+    div:nth-child(2) {
+      > article {
+        div {
+          background-color: rgba(133, 197, 133, 0.05);
+          border-radius: 5px;
+          border-left: 4px solid rgba(133, 197, 133, 0.6);
+          flex-wrap: wrap;
+          align-content: center;
+          > figcaption {
+            color: #e0e0e0;
+            margin: 10px 0 8px 8px;
+          }
+          > p {
+            color: #898989;
+            margin: 0 0 auto 8px;
+            font-size: 13.21px;
+          }
+        }
+      }
+      > article:nth-child(2) {
+        div {
+          background-color: rgba(246, 125, 77, 0.05);
+          border-left: 4px solid rgba(241, 206, 188, 0.6);
+        }
+      }
+      > article:nth-child(3) {
+        div {
+          background-color: rgba(246, 125, 77, 0.05);
+          border-left: 4px solid rgba(246, 125, 177, 0.6);
+        }
+      }
+    }
+  }
+  .home-page-section__cards:nth-child(8) {
+    div:nth-child(2) {
+      > article {
+        figure {
+          div {
+            display: flex;
+            justify-content: start;
+          }
+        }
+        div {
+          background-color: rgba(133, 197, 133, 0.05);
+          border-radius: 5px;
+          flex-wrap: wrap;
+          .play-icon {
+            display: flex;
+            width: 14px;
+            height: 11.33px;
+            margin-top: 10px;
+            margin-left: 8px;
+          }
+          > figcaption {
+            color: #e0e0e0;
+            margin: 10px 0 8px 8px;
+          }
+          > p {
+            color: #898989;
+            margin: 0 0 auto 8px;
+            font-size: 13.21px;
+          }
+        }
+      }
+      > article:nth-child(2) {
+        div {
+          background-color: rgba(246, 125, 77, 0.05);
+        }
+      }
+      > article:nth-child(3) {
+        div {
+          background-color: rgba(246, 125, 77, 0.05);
         }
       }
     }
