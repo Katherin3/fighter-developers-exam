@@ -19,7 +19,7 @@ footer {
 
         // Left: transport controls + progress bar 
         .player-left {
-            @include flex-align-center();
+            @include flex-align();
             gap: 20px;
 
             .time-current,
@@ -29,7 +29,7 @@ footer {
             }
 
             .btn-volume {
-                @include flex-align-justify-center();
+                @include flex-align();
             }
 
             .progress-bar {
@@ -81,7 +81,7 @@ footer {
 
         // Center: song info
         .player-center {
-            @include flex-align-center();
+            @include flex-align();
             gap: 10px;
             padding: 0 20px;
 
@@ -105,10 +105,10 @@ footer {
 
         // Right: action buttons
         .player-right {
-            @include flex-align-center();
+            @include flex-align();
 
             .player-actions {
-                @include flex-align-center();
+                @include flex-align();
 
                 // gap: 20px;
                 img {
