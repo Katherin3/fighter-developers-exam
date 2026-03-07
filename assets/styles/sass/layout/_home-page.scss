@@ -84,6 +84,7 @@
         margin: 0;
       }
     }
+
     img {
       width: 40.41px;
       height: 40.41px;
@@ -140,27 +141,24 @@
     div:nth-child(1) {
       width: 100%;
       height: auto;
+
       h2 {
-        display: inline-flex;
-        align-items: center;
-        height: 40.41px;
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 100%;
-        letter-spacing: 3%;
-        color: #e0e0e0;
+        @include layout-title-h2();
       }
+
       button {
         width: 40.41px;
         height: 40.41px;
         float: right;
         margin-left: 5px;
+
         img {
           width: 23.57px;
           height: 20.21px;
           filter: brightness(0.1) invert(10);
         }
       }
+
       button:nth-child(4) {
         img {
           filter: brightness(0) invert(0.4);
@@ -173,6 +171,7 @@
         }
       }
     }
+
     div:nth-child(2) {
       width: 100%;
       height: auto;
@@ -196,7 +195,8 @@
           margin-bottom: 1px;
           background-color: rgba(206, 110, 154, 0.15);
         }
-        > div:nth-child(2) {
+
+        >div:nth-child(2) {
           width: 154px;
           height: 6px;
           margin-bottom: 1px;
@@ -204,8 +204,9 @@
           border-top-right-radius: 7.25px;
           background-color: rgba(206, 110, 154, 0.3);
         }
-        > figure {
-          > img {
+
+        >figure {
+          >img {
             width: 170px;
             height: 170px;
             border-radius: 7.25px;
@@ -213,6 +214,7 @@
             display: flex;
             flex-direction: column;
           }
+
           figcaption:nth-child(2) {
             font-size: 14px;
             font-weight: 500;
@@ -221,6 +223,7 @@
             color: #e0e0e0;
             display: inline-block;
           }
+
           span:nth-child(3) {
             font-size: 14px;
             font-weight: 400;
@@ -230,6 +233,7 @@
             display: inline;
             float: right;
           }
+
           p:nth-child(4) {
             margin-top: 8px;
             font-size: 12px;
@@ -294,78 +298,98 @@
         }
       }
       article:nth-child(2) {
-        > div:nth-child(1) {
+        >div:nth-child(1) {
           background-color: rgba(149, 230, 211, 0.15);
         }
-        > div:nth-child(2) {
+
+        >div:nth-child(2) {
           background-color: rgba(149, 230, 211, 0.3);
         }
+
         span:nth-child(3) {
           color: #95e6d3;
         }
       }
+
       article:nth-child(3) {
-        > div:nth-child(1) {
+        >div:nth-child(1) {
           background-color: rgba(244, 184, 189, 0.15);
         }
-        > div:nth-child(2) {
+
+        >div:nth-child(2) {
           background-color: rgba(244, 184, 189, 0.3);
         }
+
         span:nth-child(3) {
           color: #f4b8bd;
         }
       }
+
       article:nth-child(4) {
-        > div:nth-child(1) {
+        >div:nth-child(1) {
           background-color: rgba(195, 231, 183, 0.15);
         }
-        > div:nth-child(2) {
+
+        >div:nth-child(2) {
           background-color: rgba(195, 231, 183, 0.3);
         }
+
         span:nth-child(3) {
           color: #c3e7b7;
         }
       }
+
       article:nth-child(5) {
-        > div:nth-child(1) {
+        >div:nth-child(1) {
           background-color: rgba(243, 127, 166, 0.15);
         }
-        > div:nth-child(2) {
+
+        >div:nth-child(2) {
           background-color: rgba(243, 127, 166, 0.3);
         }
+
         span:nth-child(3) {
           color: #f37fa6;
         }
       }
+
       article:nth-child(6) {
-        > div:nth-child(1) {
+        >div:nth-child(1) {
           background-color: rgba(160, 190, 200, 0.15);
         }
-        > div:nth-child(2) {
+
+        >div:nth-child(2) {
           background-color: rgba(160, 190, 200, 0.3);
         }
+
         span:nth-child(3) {
           color: #a0bec8;
         }
       }
+
       article:nth-child(7) {
-        > div:nth-child(1) {
+        >div:nth-child(1) {
           background-color: rgba(253, 216, 125, 0.15);
         }
-        > div:nth-child(2) {
+
+        >div:nth-child(2) {
           background-color: rgba(253, 216, 125, 0.3);
         }
+
         span:nth-child(3) {
           color: #fdd87d;
         }
       }
+
       article:nth-child(8) {
-        > div:nth-child(1) {
+        >div:nth-child(1) {
           background-color: rgba(212, 178, 169, 0.15);
         }
-        > div:nth-child(2) {
+
+        >div:nth-child(2) {
           background-color: rgba(212, 178, 169, 0.3);
         }
+
         span:nth-child(3) {
           color: #d4b2a9;
         }
@@ -379,89 +403,112 @@
   .home-page-section__cards:nth-child(5) {
     div:nth-child(2) {
       article:nth-child(1) {
-        > div:nth-child(1) {
+        >div:nth-child(1) {
           background-color: rgba(204, 246, 101, 0.15);
         }
-        > div:nth-child(2) {
+
+        >div:nth-child(2) {
           background-color: rgba(204, 246, 101, 0.3);
         }
+
         span:nth-child(3) {
           color: #ccf665;
         }
       }
+
       article:nth-child(2) {
-        > div:nth-child(1) {
+        >div:nth-child(1) {
           background-color: rgba(249, 231, 44, 0.15);
         }
-        > div:nth-child(2) {
+
+        >div:nth-child(2) {
           background-color: rgba(249, 231, 44, 0.3);
         }
+
         span:nth-child(3) {
           color: #f9e72c;
         }
       }
+
       article:nth-child(3) {
-        > div:nth-child(1) {
+        >div:nth-child(1) {
           background-color: rgba(155, 240, 226, 0.15);
         }
-        > div:nth-child(2) {
+
+        >div:nth-child(2) {
           background-color: rgba(155, 240, 226, 0.3);
         }
+
         span:nth-child(3) {
           color: #9bf0e2;
         }
       }
+
       article:nth-child(4) {
-        > div:nth-child(1) {
+        >div:nth-child(1) {
           background-color: rgba(111, 134, 255, 0.15);
         }
-        > div:nth-child(2) {
+
+        >div:nth-child(2) {
           background-color: rgba(111, 134, 255, 0.3);
         }
+
         span:nth-child(3) {
           color: #6f86ff;
         }
       }
+
       article:nth-child(5) {
-        > div:nth-child(1) {
+        >div:nth-child(1) {
           background-color: rgba(255, 203, 212, 0.15);
         }
-        > div:nth-child(2) {
+
+        >div:nth-child(2) {
           background-color: rgba(255, 203, 212, 0.3);
         }
+
         span:nth-child(3) {
           color: #ffcbd4;
         }
       }
+
       article:nth-child(6) {
-        > div:nth-child(1) {
+        >div:nth-child(1) {
           background-color: rgba(255, 198, 104, 0.15);
         }
-        > div:nth-child(2) {
+
+        >div:nth-child(2) {
           background-color: rgba(255, 198, 104, 0.3);
         }
+
         span:nth-child(3) {
           color: #ffc668;
         }
       }
+
       article:nth-child(7) {
-        > div:nth-child(1) {
+        >div:nth-child(1) {
           background-color: rgba(39, 133, 107, 0.15);
         }
-        > div:nth-child(2) {
+
+        >div:nth-child(2) {
           background-color: rgba(39, 133, 107, 0.3);
         }
+
         span:nth-child(3) {
           color: #27856b;
         }
       }
+
       article:nth-child(8) {
-        > div:nth-child(1) {
+        >div:nth-child(1) {
           background-color: rgba(221, 19, 139, 0.15);
         }
-        > div:nth-child(2) {
+
+        >div:nth-child(2) {
           background-color: rgba(221, 19, 139, 0.3);
         }
+
         span:nth-child(3) {
           color: #dd138b;
         }
@@ -474,8 +521,10 @@
         filter: none;
       }
     }
+
     div:nth-child(2) {
       margin-top: 15px;
+
       // Article Section Style
       article {
         width: 170.58px;
@@ -485,14 +534,15 @@
         align-items: center;
         text-align: center;
 
-        > figure {
-          > img {
+        >figure {
+          >img {
             width: 170.13px;
             height: 170.13px;
             border-radius: 7.25px;
             margin-bottom: 6.5px;
             border-radius: 50%;
           }
+
           figcaption:nth-child(2) {
             font-size: 14px;
             font-weight: 500;
@@ -519,6 +569,7 @@
       }
     }
   }
+  .home-page-section__cards:nth-child(5) {
   .home-page-section__cards:nth-child(7) {
     div:nth-child(2) {
       article {
