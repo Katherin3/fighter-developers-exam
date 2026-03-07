@@ -12,8 +12,6 @@ ul.tags {
         letter-spacing: 3%;
         margin-right: 10px;
         border-radius: 8px;
-        color: $light-gray-color;
-        background-color: $tag-bg;
         text-align: center;
         transition: 0.5s;
 
@@ -21,15 +19,41 @@ ul.tags {
             display: block;
             padding: 8px 15px;
         }
+    }
 
-        &:hover {
-            background-color: $light-gray-color;
-            color: $dark-bg;
+    &--dark {
+        li {
+            color: $light-gray-color;
+            background-color: $tag-bg;
+            border: 1px solid $tag-bg;
+
+            &:hover {
+                background-color: $light-gray-color;
+                color: $dark-bg;
+            }
+
+            &.active {
+                background-color: $light-gray-color;
+                color: $dark-bg;
+            }
         }
     }
 
-    .active {
-        background-color: $light-gray-color;
-        color: $dark-bg;
+    &--light {
+        li {
+            color: $gray-color;
+            background-color: $tag-bg;
+            border: 1px solid $gray-color;
+
+            &:hover {
+                background-color: $gray-color;
+                color: $tag-bg;
+            }
+
+            &.active {
+                background-color: $gray-color;
+                color: $tag-bg;
+            }
+        }
     }
 }
