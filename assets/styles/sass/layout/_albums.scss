@@ -6,11 +6,12 @@
 @use "../layout/aside" as *;
 
 .albums-section {
-  background-color: rgba(6, 6, 6, 1);
+  background: linear-gradient(180deg, rgb(21, 22, 24) 0%, rgba(6, 6, 6, 1) 100%);
   display: flex;
   width: 100%;
   height: auto;
   padding: 0;
+  border: none;
   .albums-section__list-card {
     max-width: 978px;
     width: 100%;
@@ -90,6 +91,7 @@
     img {
       width: 400px;
       height: 400px;
+      border-radius: 10px;
     }
     ul {
       margin-top: 30px;
@@ -98,7 +100,7 @@
       display: flex;
       flex-wrap: wrap;
       li {
-        background-color: rgba(6, 6, 6, 1);
+        background-color: transparent;
         border: 2px solid rgba(137, 137, 137, 0.25);
         padding: 8px 10px;
         border-radius: 44px;
