@@ -1,0 +1,66 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.discover-section {
+    nav {
+        margin-bottom: 12px;
+    }
+
+    &__cards {
+        @include flex-align(center, center);
+        gap: 80px;
+        margin: 50px 0;
+
+        figure {
+            position: relative;
+
+            a {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                padding: 15px;
+                display: block;
+                cursor: pointer;
+            }
+
+            figcaption {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 10px;
+                display: flex;
+                gap: 5px;
+
+                span {
+                    display: block;
+                    width: 100%;
+                    height: 4px;
+                    background-color: $gray-color;
+                    border-radius: 2px;
+
+                    &:first-child::before {
+                        content: "";
+                        width: 60%;
+                        display: block;
+                        background-color: $light-gray-color;
+                        height: 4px;
+                        border-radius: 2px;
+                        animation: loading 2s linear infinite;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}

@@ -1,4 +1,5 @@
 @use "../sass/base/fonts.scss";
+@use "../sass/components/tags.scss";
 @use "../sass/abstracts/mixins.scss";
 @use "../sass/abstracts/variables.scss";
 @use "../sass/base/reset.scss";
@@ -10,3 +11,4 @@
 @use "../sass/components/button.scss";
 @use "../sass/layout/search.scss";
 @use "../sass/layout/albums.scss";
+@use "../sass/layout/discover.scss";
