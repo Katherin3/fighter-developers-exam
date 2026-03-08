@@ -18,17 +18,16 @@
       width: 100%;
       height: auto;
 
-      >li:nth-child(2),
-      >li:nth-child(3) {
+      > li:nth-child(2),
+      > li:nth-child(3) {
         @include flex-align(space-between, center);
 
-        >div {
+        > div {
           @include flex-align();
         }
       }
 
-      >li {
-        background-color: #c21096;
+      > li {
         width: 100%;
         height: 40.41px;
         margin-bottom: 10px;
@@ -39,12 +38,12 @@
         transition: all 0.3s ease;
 
         &:hover {
-          background-color: #c21096;
+          background-color: rgba(32, 32, 32, 1);
           color: white;
         }
 
-        >a {
-          >figure {
+        > a {
+          > figure {
             @include flex-align();
 
             img {
@@ -76,8 +75,8 @@
         }
       }
 
-      >li:nth-child(2),
-      >li:nth-child(3) {
+      > li:nth-child(2),
+      > li:nth-child(3) {
         &::after {
           content: ">";
           font-size: 18px;
