@@ -29,3 +29,18 @@ body {
         margin-bottom: 90px;
     }
 }
+
+section {
+    width: 100%;
+    height: auto;
+    border: 1px solid #202020;
+    border-radius: 10px;
+    padding: 6px 25px;
+
+    @media screen and (max-width: 390px) {
+        width: 390px;
+        height: auto;
+        padding: 6px 15px;
+    }
+
+}
