@@ -11,6 +11,7 @@
 
 <body>
     <div class="layout">
+        <input type="checkbox" id="library-toggle" class="library-checkbox">
         <!-- In the aside tag, there is a navigation section where a list is used. -->
         <aside class="aside">
             <!-- a navigation section where a list is used. -->
@@ -20,16 +21,21 @@
                     <li>
                         <a href="#">
                             <figure>
-                                <img src="./assets/images/icon-images/library.png" alt="library icon">
-                                <figcaption>My Library</figcaption>
+                                <label for="library-toggle" class="library-trigger">
+                                    <img class="library-item" src="./assets/images/icon-images/library.png"
+                                        alt="library icon">
+                                </label>
+                                <figcaption class="nav-item">My Library</figcaption>
                             </figure>
                         </a>
                     </li>
+
+
                     <li>
                         <a href="#">
                             <figure>
-                                <img src="./assets/images/icon-images/Pins.png" alt="pin icon">
-                                <figcaption>Pins</figcaption>
+                                <img class="pins" src="./assets/images/icon-images/Pins.png" alt="pin icon">
+                                <figcaption class="nav-item">Pins</figcaption>
                             </figure>
                         </a>
                     </li>
@@ -37,7 +43,7 @@
                         <a href="#">
                             <figure>
                                 <img src="./assets/images/icon-images/Playlists.png" alt="Playlists icon">
-                                <figcaption>Playlists</figcaption>
+                                <figcaption class="nav-item">Playlists</figcaption>
                             </figure>
                         </a>
                     </li>
@@ -45,7 +51,7 @@
                         <a href="#">
                             <figure>
                                 <img src="./assets/images/icon-images/likes.png" alt="like icon">
-                                <figcaption>Liked songs</figcaption>
+                                <figcaption class="nav-item">Liked songs</figcaption>
                             </figure>
                         </a>
                     </li>
@@ -53,7 +59,7 @@
                         <a href="#">
                             <figure>
                                 <img src="./assets/images/icon-images/Saves.png" alt="saves icon">
-                                <figcaption>Saves</figcaption>
+                                <figcaption class="nav-item">Saves</figcaption>
                             </figure>
                         </a>
                     </li>
@@ -61,7 +67,7 @@
                         <a href="../pages/albums.html">
                             <figure>
                                 <img src="./assets/images/icon-images/Albums.png" alt="albums icon">
-                                <figcaption>Albums</figcaption>
+                                <figcaption class="nav-item">Albums</figcaption>
                             </figure>
                         </a>
                     </li>
@@ -69,7 +75,7 @@
                         <a href="#">
                             <figure>
                                 <img src="./assets/images/icon-images/Folders.png" alt="folders icon">
-                                <figcaption>Folders</figcaption>
+                                <figcaption class="nav-item">Folders</figcaption>
                             </figure>
                         </a>
                     </li>
@@ -77,7 +83,7 @@
                         <a href="#">
                             <figure>
                                 <img src="./assets/images/icon-images/Podcasts.png" alt="podcasts icon">
-                                <figcaption>Podcasts</figcaption>
+                                <figcaption class="nav-item">Podcasts</figcaption>
                             </figure>
                         </a>
                     </li>
@@ -85,7 +91,7 @@
                         <a href="#">
                             <figure>
                                 <img src="./assets/images/icon-images/Audiobooks.png" alt="audiobooks icon">
-                                <figcaption>Audiobooks</figcaption>
+                                <figcaption class="nav-item">Audiobooks</figcaption>
                             </figure>
                         </a>
                     </li>
@@ -93,7 +99,7 @@
                         <a href="#">
                             <figure>
                                 <img src="./assets/images/icon-images/Artists.png" alt="artists icon">
-                                <figcaption>Artists</figcaption>
+                                <figcaption class="nav-item">Artists</figcaption>
                             </figure>
                         </a>
                     </li>
