@@ -52,6 +52,47 @@
                 }
             }
         }
+
+        article {
+            @include flex-align(flex-start, center);
+            gap: 30px;
+
+            figure {
+                img {
+                    width: auto;
+                    height: 200px;
+                    border-radius: 8px;
+                }
+            }
+
+            .discover-section_description {
+                h1 {
+                    @include layout-title-h1();
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-family: "satoshi-medium", sans-serif;
+                    font-size: 14px;
+                    color: $gray-color;
+                    margin-bottom: 20px;
+
+                    a {
+                        color: #fff;
+                    }
+                }
+
+                div {
+                    @include flex-align(flex-start, center);
+                    gap: 20px;
+                    margin-bottom: 20px;
+
+                    img {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
     }
 }
 
