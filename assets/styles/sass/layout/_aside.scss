@@ -2,6 +2,7 @@
 @use "../abstracts/mixins" as *;
 @use "../base/base" as *;
 @use "../base/reset" as *;
+@use "../components/tags" as *;
 
 .library-checkbox {
   display: none;
