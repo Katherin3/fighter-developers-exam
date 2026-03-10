@@ -9,13 +9,15 @@
     display: none;
 
     &:checked+.aside {
-        width: 60px !important;
-        max-width: 60px !important;
+        width: 60px;
+        max-width: 60px;
         padding: 11px 0;
 
         .aside__nav__list {
             .nav-item {
-                display: none !important;
+                opacity: 0;
+                max-width: 0;
+                overflow: hidden;
             }
 
             .library-item {
@@ -23,13 +25,17 @@
             }
 
             li::after {
-                display: none !important;
+                display: none;
             }
 
-            li {
-                width: 60px;
-                padding: 0 !important;
-                @include flex-align(center, center);
+            li a {
+                padding: 10px;
+                justify-content: center;
+            }
+
+            li a figure {
+                justify-content: center;
+                gap: 0;
             }
         }
     }
@@ -41,13 +47,14 @@
     width: 259px;
     height: 957px;
     padding: 11px;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                max-width 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                padding 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     overflow: hidden;
 
     &__nav {
-        width: 248px;
+        width: 100%;
         height: 935px;
-
     }
 
     @media (max-width: 390px) {
