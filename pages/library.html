@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/styles/css/styles.css">
+    <script src="../library-btn.js" defer></script>
     <title>Fighter Developers Exam</title>
 </head>
 
@@ -178,14 +179,14 @@
 
             <main class="main-content">
                 <!-- The first section of the main content, the first section uses the navigation bar and part of the article cards. -->
-                <section class="main-content__home-page-section">
+                <section class="main-content__library-page-section">
 
                     <!-- Recent library -->
                     <div class="recent-library">
                         <header class="fixed-container-77">
                             <div class="inner-wrapper-104">
                                 <div class="left-group-106">
-                                    <div class="icons-block-187">
+                                    <div class="icons-block-187 toggle-layout-btn">
                                         <img src="../assets/images/icon-images/list.svg" class="icon" alt="list icon">
                                         <img src="../assets/images/icon-images/Shuffle.png" class="icon action-icons" alt="shuffle icon">
                                     </div>
@@ -654,8 +655,108 @@
                                 </li>
                             </ul>
                     </div>
+                    </div>>
+                    <div class="playlist-table-container">
+                        <div class="table-header">
+                            <span class="col-id">#</span>
+                            <span class="col-title">Title</span>
+                            <span class="col-album">Album</span>
+                            <span class="col-duration">Duration</span>
+                            <span class="col-heart"></span>
+                        </div>
+                        <div class="playlist-row">
+                            <div class="col-id">1</div>
+                            <div class="col-title">
+                                <img src="../assets/images/layout-images/Daft Punk.png" alt="Get Lucky" class="song-thumbnail">
+                                <div class="song-details">
+                                    <span class="song-name">Get Lucky</span>
+                                    <span class="artist-name">Daft Punk</span>
+                                </div>
+                            </div>
+                            <div class="col-album">Random Access Memories</div>
+                            <div class="col-duration">4:35</div>
+                            <div class="col-heart">💚</div>
+                        </div>
+                        <div class="playlist-row">
+                            <div class="col-id">2</div>
+                            <div class="col-title">
+                                <img src="../assets/images/layout-images/Daft Punk.png" alt="Instant Crush" class="song-thumbnail">
+                                <div class="song-details">
+                                    <span class="song-name">Instant Crush</span>
+                                    <span class="artist-name">Daft Punk, Julian Casablancas</span>
+                                </div>
+                            </div>
+                            <div class="col-album">Random Access Memories</div>
+                            <div class="col-duration">5:37</div>
+                            <div class="col-heart">💚</div>
+                        </div>
+                        <div class="playlist-row">
+                            <div class="col-id">3</div>
+                            <div class="col-title">
+                                <img src="../assets/images/layout-images/On Melancholy Hill.png" alt="On Melancholy Hill" class="song-thumbnail">
+                                <div class="song-details">
+                                    <span class="song-name">On Melancholy Hill</span>
+                                    <span class="artist-name">Gorillaz</span>
+                                </div>
+                            </div>
+                            <div class="col-album">Plastic Beach</div>
+                            <div class="col-duration">5:53</div>
+                            <div class="col-heart">💚</div>
+                        </div>
+                        <div class="playlist-row">
+                            <div class="col-id">4</div>
+                            <div class="col-title">
+                                <img src="../assets/images/layout-images/Tainted Love.png" alt="Tainted Love" class="song-thumbnail">
+                                <div class="song-details">
+                                    <span class="song-name">Tainted Love</span>
+                                    <span class="artist-name">Soft Call</span>
+                                </div>
+                            </div>
+                            <div class="col-album">Non-Stop Erotic Cabaret</div>
+                            <div class="col-duration">2:33</div>
+                            <div class="col-heart">💚</div>
+                        </div>
+                        <div class="playlist-row">
+                            <div class="col-id">5</div>
+                            <div class="col-title">
+                                <img src="../assets/images/layout-images/One More Time.png" alt="One More Time" class="song-thumbnail">
+                                <div class="song-details">
+                                    <span class="song-name">One More Time</span>
+                                    <span class="artist-name">Daft Punk</span>
+                                </div>
+                            </div>
+                            <div class="col-album">Discovery</div>
+                            <div class="col-duration">5:20</div>
+                            <div class="col-heart">💚</div>
+                        </div>
+                        <div class="playlist-row">
+                            <div class="col-id">6</div>
+                            <div class="col-title">
+                                <img src="../assets/images/layout-images/Electric Feel.png" alt="Electric Feel" class="song-thumbnail">
+                                <div class="song-details">
+                                    <span class="song-name">Electric Feel</span>
+                                    <span class="artist-name">MGMT</span>
+                                </div>
+                            </div>
+                            <div class="col-album">Oracular Spectacular</div>
+                            <div class="col-duration">3:49</div>
+                            <div class="col-heart">💚</div>
+                        </div>
+                        <div class="playlist-row">
+                            <div class="col-id">7</div>
+                            <div class="col-title">
+                                <img src="../assets/images/layout-images/Daft Punk.png" alt="Motherboard" class="song-thumbnail">
+                                <div class="song-details">
+                                    <span class="song-name">Give Life Back to Music</span>
+                                    <span class="artist-name">Daft Punk</span>
+                                </div>
+                            </div>
+                            <div class="col-album">Random Access Memories</div>
+                            <div class="col-duration">4:35</div>
+                            <div class="col-heart">💚</div>
+                        </div>
             </main>
-            <main class="mobile-main">
+            <section class="mobile-main">
                 <div class="content">
                 <button class="accordion-item">
                     <span>Playlists</span>
@@ -686,7 +787,7 @@
                     <img src="../assets/images/icon-images/arrow-icon.svg" alt="Arrow">
                 </button>
                 </div>
-            </main>
+            </section>
 
             <footer>
                 <!-- Start Desktop Footer Player, Progress Bar + Volume -->
