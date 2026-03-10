@@ -4,8 +4,8 @@
 footer {
     position: fixed;
     bottom: 0;
+    left: $aside-width;
     right: 0;
-    width: calc(100% - 259px);
 
     // Desktop Player Bar
     .player-wrapper {
@@ -15,7 +15,6 @@ footer {
         align-items: center;
         justify-content: space-between;
         border-radius: 10px;
-        margin: 7px 7px 0 7px;
 
         // Left: transport controls + progress bar 
         .player-left {

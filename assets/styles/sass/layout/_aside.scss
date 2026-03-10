@@ -5,56 +5,55 @@
 @use "../components/tags" as *;
 @use "../components/nav-buttons" as *;
 
-.library-checkbox {
+.toggle-checkbox {
     display: none;
 
     &:checked+.aside {
-        width: 60px;
-        max-width: 60px;
-        padding: 11px 0;
+        width: 75px;
+        max-width: 75px;
+        padding: 11px;
 
         .aside__nav__list {
+
+            li:hover,
+            li.active {
+                background-color: transparent;
+            }
+
             .nav-item {
                 opacity: 0;
                 max-width: 0;
                 overflow: hidden;
             }
-
-            .library-item {
-                filter: brightness(0.01) invert(100);
-            }
-
-            li::after {
-                display: none;
-            }
-
-            li a {
-                padding: 10px;
-                justify-content: center;
-            }
-
-            li a figure {
-                justify-content: center;
-                gap: 0;
-            }
         }
+    }
+
+    &:checked~header,
+    &:checked~main,
+    &:checked~footer {
+        left: $aside-width-m;
     }
 }
 
 .aside {
-    background-color: $dark-bg;
-    max-width: 259px;
-    width: 259px;
-    height: 957px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: $aside-width;
+    height: 100vh;
     padding: 11px;
-    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-                max-width 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-                padding 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     overflow: hidden;
+
+    .aside__nav__list {
+        a {
+            padding: 10px 0 10px 20px;
+        }
+    }
 
     &__nav {
         width: 100%;
-        height: 935px;
+        height: 100vh;
     }
 
     @media (max-width: 390px) {
