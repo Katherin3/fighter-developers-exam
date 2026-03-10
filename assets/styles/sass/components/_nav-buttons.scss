@@ -13,7 +13,8 @@ ul.nav-buttons {
         &:hover {
             background-color: $tag-bg;
 
-            a {
+            a,
+            form {
                 color: $light-gray-color;
 
                 img {
@@ -22,26 +23,27 @@ ul.nav-buttons {
             }
         }
 
-        a {
+        a,
+        form {
             display: block;
             padding: 10px 100px 10px 20px;
             color: $gray-color;
             transition: 0.3s;
+        }
 
-            figure {
-                @include flex-align(flex-start, center);
-                gap: 15px;
+        figure {
+            @include flex-align(flex-start, center);
+            gap: 15px;
 
-                img {
-                    opacity: 0.5;
-                    transition: 0.3s;
-                }
+            img {
+                opacity: 0.5;
+                transition: 0.3s;
             }
+        }
 
-            figcaption {
-                font-size: 1.4rem;
-                letter-spacing: 3%;
-            }
+        figcaption {
+            font-size: 1.4rem;
+            letter-spacing: 3%;
         }
     }
 }
