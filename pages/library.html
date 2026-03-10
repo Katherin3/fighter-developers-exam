@@ -10,985 +10,972 @@
 </head>
 
 <body>
-    <div class="layout">
-        <input type="checkbox" id="library-toggle" class="library-checkbox">
-        <!-- In the aside tag, there is a navigation section where a list is used. -->
-        <aside class="aside">
-            <!-- a navigation section where a list is used. -->
-            <nav class="aside__nav">
-                <!--In lists, a div container is used to contain icons and a span for navigation labels. -->
-                <ul class="aside__nav__list nav-buttons nav-buttons--dark">
-                    <li class="active">
-                        <a href="library.html">
-                            <figure>
-                                <label for="library-toggle" class="library-trigger">
-                                    <img class="library-item" src="../assets/images/icon-images/library_icon.svg"
-                                        alt="library icon">
-                                </label>
-                                <figcaption class="nav-item">My Library</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img class="pins" src="../assets/images/icon-images/pin.svg" alt="pin icon">
-                                <figcaption class="nav-item">Pins</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="play-list.html">
-                            <figure>
-                                <img src="../assets/images/icon-images/playlist_icon.svg" alt="Playlists icon">
-                                <figcaption class="nav-item">Playlists</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="song.html">
-                            <figure>
-                                <img src="../assets/images/icon-images/fav_icon.svg" alt="like icon">
-                                <figcaption class="nav-item">Liked songs</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="../assets/images/icon-images/bookmark_icon.svg" alt="saves icon">
-                                <figcaption class="nav-item">Saves</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="albums.html">
-                            <figure>
-                                <img src="../assets/images/icon-images/album_icon.svg" alt="albums icon">
-                                <figcaption class="nav-item">Albums</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="../assets/images/icon-images/folder_icon.svg" alt="folders icon">
-                                <figcaption class="nav-item">Folders</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="../assets/images/icon-images/podcast_icon.svg" alt="podcasts icon">
-                                <figcaption class="nav-item">Podcasts</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="../assets/images/icon-images/audio_books_icon.svg" alt="audiobooks icon">
-                                <figcaption class="nav-item">Audiobooks</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="../assets/images/icon-images/artist_icon.svg" alt="artists icon">
-                                <figcaption class="nav-item">Artists</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
-        <div class="main-wrapper">
-            <header class="top-header">
-                <nav class="main-nav">
-                    <ul class="nav-buttons nav-buttons--dark">
-                        <li>
-                            <a href="../index.html">
-                                <figure>
-                                    <img src="../assets/images/icon-images/home_icon.svg" alt="home">
-                                    <figcaption>Home</figcaption>
-                                </figure>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="discover.html">
-                                <figure>
-                                    <img src="../assets/images/icon-images/discover_icon.svg" alt="discover">
-                                    <figcaption>Discover</figcaption>
-                                </figure>
-                            </a>
-                        </li>
-                        <li>
-                            <form action="search.html" method="get" role="search">
-                                <figure>
-                                    <img src="../assets/images/icon-images/search_icon.svg" alt="search">
-                                    <input class="search-input" type="search" name="q" placeholder="Search...">
-                                </figure>
-                            </form>
-                        </li>
-                    </ul>
-                </nav>
-
-                <nav class="actions">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <figure>
-                                    <img src="../assets/images/icon-images/references.svg" alt="references">
-                                </figure>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <figure>
-                                    <img src="../assets/images/icon-images/block.svg" alt="block">
-                                </figure>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <figure>
-                                    <img src="../assets/images/icon-images/friends.svg" alt="friends">
-                                </figure>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <figure>
-                                    <img src="../assets/images/icon-images/setting.svg" alt="settings">
-                                </figure>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <figure>
-                                    <img src="../assets/images/icon-images/logo.svg" alt="Logo" class="user-logo">
-                                </figure>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <header class="mobile-header">
-                <div class="status-bar">
-                    <div class="status-left">
-                        <span>9:41</span>
-                        <img src="../assets/images/icon-images/icons8-navigation.png" alt="Location">
-                    </div>
-                    <div class="status-right">
-                        <img src="../assets/images/icon-images/icons8-signal.png" alt="Signal">
-                        <img src="../assets/images/icon-images/icons8-personal-hotspot-.png" alt="Personal Hotspot">
-                        <img src="../assets/images/icon-images/battery android.png" alt="Battery">
-                    </div>
-                </div>
-                <div class="search-section">
-                    <div class="search-bar">
-                        <img src="../assets/images/icon-images/search_icon.svg" alt="search">
-                        <input type="text" placeholder="Search library">
-                    </div>
-                    <div class="plus-icon">
-                        <button><img src="../assets/images/icon-images/plus.svg" alt="plus"></button>
-                    </div>
-                </div>
-                <div class="filter-section">
-                    <div class="group-tag">
-                        <img src="../assets/images/icon-images/group.svg" alt="Group">
-                        <span>Group</span>
-                    </div>
-                    <div class="recent-filter">
-                        <span>Recent</span>
-                        <button class="toggle-list">
-                            <img src="../assets/images/icon-images/Shuffle.png" class="view-icon" alt="shuffle icon">
-                        </button>
-                    </div>
-                </div>
-            </header>
-
-            <main class="main-content">
-                <!-- The first section of the main content, the first section uses the navigation bar and part of the article cards. -->
-                <section class="main-content__home-page-section">
-
-                    <!-- Recent library -->
-                    <div class="recent-library">
-                        <header class="fixed-container-77">
-                            <div class="inner-wrapper-104">
-                                <div class="left-group-106">
-                                    <div class="icons-block-187">
-                                        <img src="../assets/images/icon-images/list.svg" class="icon" alt="list icon">
-                                        <img src="../assets/images/icon-images/Shuffle.png" class="icon action-icons"
-                                            alt="shuffle icon">
-                                    </div>
-                                    <div class="info-block-85">
-                                        <img src="../assets/images/icon-images/resent.svg" class="icon"
-                                            alt="recent icon">
-                                        <span class="text">Recent</span>
-                                    </div>
-                                    <div class="info-block-63">
-                                        <img src="../assets/images/icon-images/group.svg" class="icon" alt="group icon">
-                                        <span class="text">Group</span>
-                                    </div>
-                                    <div class="single-icon-34">
-                                        <img src="../assets/images/icon-images/search_icon.svg" class="small-icon"
-                                            alt="search icon">
-                                    </div>
-                                </div>
-                                <div class="right-group-84">
-                                    <img src="../assets/images/icon-images/plus.svg" class="final-icon" alt="plus icon">
-                                </div>
-                            </div>
-                        </header>
-                        <div class="recent-library__content">
-                            <ul class="recent-library__list">
-                                <li class="recent-library__item">
-                                    <article class="library-card">
-                                        <div class="library-card__media">
-                                            <img src="../assets/images/layout-images/like-song.png"
-                                                alt="liked songs playlist cover" class="library-card__img">
-                                            <button class="btn-pin" aria-label="Pin Liked Songs">
-                                                <i class="icon-pin" aria-hidden="true">
-                                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <g filter="url(#filter0_d_8083_6489)">
-                                                            <path
-                                                                d="M16.6066 2.5178L15.0888 0.999964M16.6066 2.5178L9.90624 9.21819C9.78313 9.3413 9.62232 9.41961 9.44949 9.44062L6.6962 9.77532C6.0516 9.85367 5.7803 10.6401 6.23945 11.0992L10.168 15.0278M16.6066 2.5178L22.678 8.58914M24.1958 10.107L22.678 8.58914M22.678 8.58914L15.9776 15.2895C15.8545 15.4126 15.7762 15.5734 15.7551 15.7463L15.4204 18.4996C15.3421 19.1442 14.5557 19.4155 14.0966 18.9563L10.168 15.0278M10.168 15.0278L5.00021 20.1956"
-                                                                stroke="#1ED760" stroke-width="2" stroke-linecap="round"
-                                                                stroke-linejoin="round" shape-rendering="crispEdges" />
-                                                        </g>
-                                                        <defs>
-                                                            <filter id="filter0_d_8083_6489" x="0" y="0" width="29.1958"
-                                                                height="29.1956" filterUnits="userSpaceOnUse"
-                                                                color-interpolation-filters="sRGB">
-                                                                <feFlood flood-opacity="0"
-                                                                    result="BackgroundImageFix" />
-                                                                <feColorMatrix in="SourceAlpha" type="matrix"
-                                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                                                    result="hardAlpha" />
-                                                                <feOffset dy="4" />
-                                                                <feGaussianBlur stdDeviation="2" />
-                                                                <feComposite in2="hardAlpha" operator="out" />
-                                                                <feColorMatrix type="matrix"
-                                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                                                                <feBlend mode="normal" in2="BackgroundImageFix"
-                                                                    result="effect1_dropShadow_8083_6489" />
-                                                                <feBlend mode="normal" in="SourceGraphic"
-                                                                    in2="effect1_dropShadow_8083_6489" result="shape" />
-                                                            </filter>
-                                                        </defs>
-                                                    </svg>
-                                                </i>
-                                            </button>
-                                        </div>
-                                        <figcaption class="library-card__info">
-                                            <div class="title-row">
-                                                <h3 class="library-card__title">Liked Songs</h3>
-                                                <span class="library-card__count type--green">8</span>
-                                            </div>
-                                            <p class="library-card__description">Numb, Crawling, In the End, and more
-                                            </p>
-                                        </figcaption>
-                                    </article>
-                                </li>
-                                <li class="recent-library__item">
-                                    <button class="btn-pin" aria-label="Pin Liked Songs">
-                                        <i class="icon-pin" aria-hidden="true">
-                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <g filter="url(#filter0_d_8083_6489)">
-                                                    <path
-                                                        d="M16.6066 2.5178L15.0888 0.999964M16.6066 2.5178L9.90624 9.21819C9.78313 9.3413 9.62232 9.41961 9.44949 9.44062L6.6962 9.77532C6.0516 9.85367 5.7803 10.6401 6.23945 11.0992L10.168 15.0278M16.6066 2.5178L22.678 8.58914M24.1958 10.107L22.678 8.58914M22.678 8.58914L15.9776 15.2895C15.8545 15.4126 15.7762 15.5734 15.7551 15.7463L15.4204 18.4996C15.3421 19.1442 14.5557 19.4155 14.0966 18.9563L10.168 15.0278M10.168 15.0278L5.00021 20.1956"
-                                                        stroke="#1ED760" stroke-width="2" stroke-linecap="round"
-                                                        stroke-linejoin="round" shape-rendering="crispEdges" />
-                                                </g>
-                                                <defs>
-                                                    <filter id="filter0_d_8083_6489" x="0" y="0" width="29.1958"
-                                                        height="29.1956" filterUnits="userSpaceOnUse"
-                                                        color-interpolation-filters="sRGB">
-                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                                        <feColorMatrix in="SourceAlpha" type="matrix"
-                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                                            result="hardAlpha" />
-                                                        <feOffset dy="4" />
-                                                        <feGaussianBlur stdDeviation="2" />
-                                                        <feComposite in2="hardAlpha" operator="out" />
-                                                        <feColorMatrix type="matrix"
-                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                                                        <feBlend mode="normal" in2="BackgroundImageFix"
-                                                            result="effect1_dropShadow_8083_6489" />
-                                                        <feBlend mode="normal" in="SourceGraphic"
-                                                            in2="effect1_dropShadow_8083_6489" result="shape" />
-                                                    </filter>
-                                                </defs>
-                                            </svg>
-                                        </i>
-                                    </button>
-                                    <figure>
-                                        <img src="../assets/images/layout-images/David.png" alt="David Bowie"
-                                            class="recent-searches__img--circle">
-                                        <figcaption>David Bowie</figcaption>
-                                    </figure>
-                                </li>
-                                <li class="recent-library__item">
-                                    <button class="btn-pin" aria-label="Pin Liked Songs">
-                                        <i class="icon-pin" aria-hidden="true">
-                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <g filter="url(#filter0_d_8083_6489)">
-                                                    <path
-                                                        d="M16.6066 2.5178L15.0888 0.999964M16.6066 2.5178L9.90624 9.21819C9.78313 9.3413 9.62232 9.41961 9.44949 9.44062L6.6962 9.77532C6.0516 9.85367 5.7803 10.6401 6.23945 11.0992L10.168 15.0278M16.6066 2.5178L22.678 8.58914M24.1958 10.107L22.678 8.58914M22.678 8.58914L15.9776 15.2895C15.8545 15.4126 15.7762 15.5734 15.7551 15.7463L15.4204 18.4996C15.3421 19.1442 14.5557 19.4155 14.0966 18.9563L10.168 15.0278M10.168 15.0278L5.00021 20.1956"
-                                                        stroke="#1ED760" stroke-width="2" stroke-linecap="round"
-                                                        stroke-linejoin="round" shape-rendering="crispEdges" />
-                                                </g>
-                                                <defs>
-                                                    <filter id="filter0_d_8083_6489" x="0" y="0" width="29.1958"
-                                                        height="29.1956" filterUnits="userSpaceOnUse"
-                                                        color-interpolation-filters="sRGB">
-                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                                        <feColorMatrix in="SourceAlpha" type="matrix"
-                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                                            result="hardAlpha" />
-                                                        <feOffset dy="4" />
-                                                        <feGaussianBlur stdDeviation="2" />
-                                                        <feComposite in2="hardAlpha" operator="out" />
-                                                        <feColorMatrix type="matrix"
-                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                                                        <feBlend mode="normal" in2="BackgroundImageFix"
-                                                            result="effect1_dropShadow_8083_6489" />
-                                                        <feBlend mode="normal" in="SourceGraphic"
-                                                            in2="effect1_dropShadow_8083_6489" result="shape" />
-                                                    </filter>
-                                                </defs>
-                                            </svg>
-                                        </i>
-                                    </button>
-                                    <figure>
-                                        <img src="../assets/images/layout-images/dafft.png" alt="Daft Punk"
-                                            class="recent-searches__img">
-                                        <figcaption>Daft Punk</figcaption>
-                                    </figure>
-                                </li>
-                                <li class="recent-library__item">
-                                    <article class="library-card">
-                                        <div class="library-card__media">
-                                            <img src="../assets/images/layout-images/song-mark.png" alt="songs"
-                                                class="library-card__img">
-                                            <button class="btn-pin" aria-label="Pin Liked Songs">
-                                                <i class="icon-pin" aria-hidden="true">
-                                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <g filter="url(#filter0_d_8083_6489)">
-                                                            <path
-                                                                d="M16.6066 2.5178L15.0888 0.999964M16.6066 2.5178L9.90624 9.21819C9.78313 9.3413 9.62232 9.41961 9.44949 9.44062L6.6962 9.77532C6.0516 9.85367 5.7803 10.6401 6.23945 11.0992L10.168 15.0278M16.6066 2.5178L22.678 8.58914M24.1958 10.107L22.678 8.58914M22.678 8.58914L15.9776 15.2895C15.8545 15.4126 15.7762 15.5734 15.7551 15.7463L15.4204 18.4996C15.3421 19.1442 14.5557 19.4155 14.0966 18.9563L10.168 15.0278M10.168 15.0278L5.00021 20.1956"
-                                                                stroke="#1ED760" stroke-width="2" stroke-linecap="round"
-                                                                stroke-linejoin="round" shape-rendering="crispEdges" />
-                                                        </g>
-                                                        <defs>
-                                                            <filter id="filter0_d_8083_6489" x="0" y="0" width="29.1958"
-                                                                height="29.1956" filterUnits="userSpaceOnUse"
-                                                                color-interpolation-filters="sRGB">
-                                                                <feFlood flood-opacity="0"
-                                                                    result="BackgroundImageFix" />
-                                                                <feColorMatrix in="SourceAlpha" type="matrix"
-                                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                                                    result="hardAlpha" />
-                                                                <feOffset dy="4" />
-                                                                <feGaussianBlur stdDeviation="2" />
-                                                                <feComposite in2="hardAlpha" operator="out" />
-                                                                <feColorMatrix type="matrix"
-                                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                                                                <feBlend mode="normal" in2="BackgroundImageFix"
-                                                                    result="effect1_dropShadow_8083_6489" />
-                                                                <feBlend mode="normal" in="SourceGraphic"
-                                                                    in2="effect1_dropShadow_8083_6489" result="shape" />
-                                                            </filter>
-                                                        </defs>
-                                                    </svg>
-                                                </i>
-                                            </button>
-                                        </div>
-                                        <figcaption class="library-card__info">
-                                            <div class="title-row">
-                                                <h3 class="library-card__title">Chill Stuff</h3>
-                                                <span class="library-card__count">152</span>
-                                            </div>
-                                            <p class="library-card__description">Simon and Garfunkel, Daft Punk, and
-                                                more</p>
-                                        </figcaption>
-                                    </article>
-                                </li>
-                                <li class="recent-library__item">
-                                    <article class="library-card">
-                                        <div class="library-card__media">
-                                            <img src="../assets/images/layout-images/song-mark.png" alt="song"
-                                                class="library-card__img">
-                                            <button class="btn-pin" aria-label="Pin Liked Songs">
-                                                <i class="icon-pin" aria-hidden="true">
-                                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <g filter="url(#filter0_d_8083_6489)">
-                                                            <path
-                                                                d="M16.6066 2.5178L15.0888 0.999964M16.6066 2.5178L9.90624 9.21819C9.78313 9.3413 9.62232 9.41961 9.44949 9.44062L6.6962 9.77532C6.0516 9.85367 5.7803 10.6401 6.23945 11.0992L10.168 15.0278M16.6066 2.5178L22.678 8.58914M24.1958 10.107L22.678 8.58914M22.678 8.58914L15.9776 15.2895C15.8545 15.4126 15.7762 15.5734 15.7551 15.7463L15.4204 18.4996C15.3421 19.1442 14.5557 19.4155 14.0966 18.9563L10.168 15.0278M10.168 15.0278L5.00021 20.1956"
-                                                                stroke="#1ED760" stroke-width="2" stroke-linecap="round"
-                                                                stroke-linejoin="round" shape-rendering="crispEdges" />
-                                                        </g>
-                                                        <defs>
-                                                            <filter id="filter0_d_8083_6489" x="0" y="0" width="29.1958"
-                                                                height="29.1956" filterUnits="userSpaceOnUse"
-                                                                color-interpolation-filters="sRGB">
-                                                                <feFlood flood-opacity="0"
-                                                                    result="BackgroundImageFix" />
-                                                                <feColorMatrix in="SourceAlpha" type="matrix"
-                                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                                                    result="hardAlpha" />
-                                                                <feOffset dy="4" />
-                                                                <feGaussianBlur stdDeviation="2" />
-                                                                <feComposite in2="hardAlpha" operator="out" />
-                                                                <feColorMatrix type="matrix"
-                                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                                                                <feBlend mode="normal" in2="BackgroundImageFix"
-                                                                    result="effect1_dropShadow_8083_6489" />
-                                                                <feBlend mode="normal" in="SourceGraphic"
-                                                                    in2="effect1_dropShadow_8083_6489" result="shape" />
-                                                            </filter>
-                                                        </defs>
-                                                    </svg>
-                                                </i>
-                                            </button>
-                                        </div>
-                                        <figcaption class="library-card__info">
-                                            <div class="title-row">
-                                                <h3 class="library-card__title">The Jux Box</h3>
-                                                <span class="library-card__count">50</span>
-                                            </div>
-                                            <p class="library-card__description">Simon and Garfunkel, Daft Punk, and
-                                                more</p>
-                                        </figcaption>
-                                    </article>
-                                </li>
-                                <li class="recent-library__item">
-                                    <article class="library-card">
-                                        <div class="library-card__media">
-                                            <img src="../assets/images/layout-images/song-mark.png" alt="song"
-                                                class="library-card__img">
-                                            <button class="btn-pin" aria-label="Pin Liked Songs">
-                                                <i class="icon-pin" aria-hidden="true">
-                                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <g filter="url(#filter0_d_8083_6489)">
-                                                            <path
-                                                                d="M16.6066 2.5178L15.0888 0.999964M16.6066 2.5178L9.90624 9.21819C9.78313 9.3413 9.62232 9.41961 9.44949 9.44062L6.6962 9.77532C6.0516 9.85367 5.7803 10.6401 6.23945 11.0992L10.168 15.0278M16.6066 2.5178L22.678 8.58914M24.1958 10.107L22.678 8.58914M22.678 8.58914L15.9776 15.2895C15.8545 15.4126 15.7762 15.5734 15.7551 15.7463L15.4204 18.4996C15.3421 19.1442 14.5557 19.4155 14.0966 18.9563L10.168 15.0278M10.168 15.0278L5.00021 20.1956"
-                                                                stroke="#1ED760" stroke-width="2" stroke-linecap="round"
-                                                                stroke-linejoin="round" shape-rendering="crispEdges" />
-                                                        </g>
-                                                        <defs>
-                                                            <filter id="filter0_d_8083_6489" x="0" y="0" width="29.1958"
-                                                                height="29.1956" filterUnits="userSpaceOnUse"
-                                                                color-interpolation-filters="sRGB">
-                                                                <feFlood flood-opacity="0"
-                                                                    result="BackgroundImageFix" />
-                                                                <feColorMatrix in="SourceAlpha" type="matrix"
-                                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                                                    result="hardAlpha" />
-                                                                <feOffset dy="4" />
-                                                                <feGaussianBlur stdDeviation="2" />
-                                                                <feComposite in2="hardAlpha" operator="out" />
-                                                                <feColorMatrix type="matrix"
-                                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                                                                <feBlend mode="normal" in2="BackgroundImageFix"
-                                                                    result="effect1_dropShadow_8083_6489" />
-                                                                <feBlend mode="normal" in="SourceGraphic"
-                                                                    in2="effect1_dropShadow_8083_6489" result="shape" />
-                                                            </filter>
-                                                        </defs>
-                                                    </svg>
-                                                </i>
-                                            </button>
-                                        </div>
-                                        <figcaption class="library-card__info">
-                                            <div class="title-row">
-                                                <h3 class="library-card__title">Selected Linkin Park</h3>
-                                                <span class="library-card__count">8</span>
-                                            </div>
-                                            <p class="library-card__description">Numb, Crawling, In the End, and more
-                                            </p>
-                                        </figcaption>
-                                    </article>
-                                </li>
-                                <li class="recent-library__item">
-                                    <article class="library-card">
-                                        <div class="library-card__media">
-                                            <img src="../assets/images/layout-images/song-mark.png" alt="song"
-                                                class="library-card__img">
-                                            <button class="btn-pin" aria-label="Pin Liked Songs">
-                                                <i class="icon-pin" aria-hidden="true">
-                                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <g filter="url(#filter0_d_8083_6489)">
-                                                            <path
-                                                                d="M16.6066 2.5178L15.0888 0.999964M16.6066 2.5178L9.90624 9.21819C9.78313 9.3413 9.62232 9.41961 9.44949 9.44062L6.6962 9.77532C6.0516 9.85367 5.7803 10.6401 6.23945 11.0992L10.168 15.0278M16.6066 2.5178L22.678 8.58914M24.1958 10.107L22.678 8.58914M22.678 8.58914L15.9776 15.2895C15.8545 15.4126 15.7762 15.5734 15.7551 15.7463L15.4204 18.4996C15.3421 19.1442 14.5557 19.4155 14.0966 18.9563L10.168 15.0278M10.168 15.0278L5.00021 20.1956"
-                                                                stroke="#1ED760" stroke-width="2" stroke-linecap="round"
-                                                                stroke-linejoin="round" shape-rendering="crispEdges" />
-                                                        </g>
-                                                        <defs>
-                                                            <filter id="filter0_d_8083_6489" x="0" y="0" width="29.1958"
-                                                                height="29.1956" filterUnits="userSpaceOnUse"
-                                                                color-interpolation-filters="sRGB">
-                                                                <feFlood flood-opacity="0"
-                                                                    result="BackgroundImageFix" />
-                                                                <feColorMatrix in="SourceAlpha" type="matrix"
-                                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                                                    result="hardAlpha" />
-                                                                <feOffset dy="4" />
-                                                                <feGaussianBlur stdDeviation="2" />
-                                                                <feComposite in2="hardAlpha" operator="out" />
-                                                                <feColorMatrix type="matrix"
-                                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                                                                <feBlend mode="normal" in2="BackgroundImageFix"
-                                                                    result="effect1_dropShadow_8083_6489" />
-                                                                <feBlend mode="normal" in="SourceGraphic"
-                                                                    in2="effect1_dropShadow_8083_6489" result="shape" />
-                                                            </filter>
-                                                        </defs>
-                                                    </svg>
-                                                </i>
-                                            </button>
-                                        </div>
-                                        <figcaption class="library-card__info">
-                                            <div class="title-row">
-                                                <h3 class="library-card__title">Vibe</h3>
-                                                <span class="library-card__count">30</span>
-                                            </div>
-                                            <p class="library-card__description">Blue Skies, No Heaven</p>
-                                        </figcaption>
-                                    </article>
-                                </li>
-                                <li class="recent-library__item">
-                                    <article class="library-card">
-                                        <div class="library-card__media">
-                                            <img src="../assets/images/layout-images/forder.png" alt="forder"
-                                                class="library-card__img">
-                                            <button class="btn-pin" aria-label="Pin Liked Songs">
-                                                <i class="icon-pin" aria-hidden="true">
-                                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <g filter="url(#filter0_d_8083_6489)">
-                                                            <path
-                                                                d="M16.6066 2.5178L15.0888 0.999964M16.6066 2.5178L9.90624 9.21819C9.78313 9.3413 9.62232 9.41961 9.44949 9.44062L6.6962 9.77532C6.0516 9.85367 5.7803 10.6401 6.23945 11.0992L10.168 15.0278M16.6066 2.5178L22.678 8.58914M24.1958 10.107L22.678 8.58914M22.678 8.58914L15.9776 15.2895C15.8545 15.4126 15.7762 15.5734 15.7551 15.7463L15.4204 18.4996C15.3421 19.1442 14.5557 19.4155 14.0966 18.9563L10.168 15.0278M10.168 15.0278L5.00021 20.1956"
-                                                                stroke="#1ED760" stroke-width="2" stroke-linecap="round"
-                                                                stroke-linejoin="round" shape-rendering="crispEdges" />
-                                                        </g>
-                                                        <defs>
-                                                            <filter id="filter0_d_8083_6489" x="0" y="0" width="29.1958"
-                                                                height="29.1956" filterUnits="userSpaceOnUse"
-                                                                color-interpolation-filters="sRGB">
-                                                                <feFlood flood-opacity="0"
-                                                                    result="BackgroundImageFix" />
-                                                                <feColorMatrix in="SourceAlpha" type="matrix"
-                                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                                                    result="hardAlpha" />
-                                                                <feOffset dy="4" />
-                                                                <feGaussianBlur stdDeviation="2" />
-                                                                <feComposite in2="hardAlpha" operator="out" />
-                                                                <feColorMatrix type="matrix"
-                                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                                                                <feBlend mode="normal" in2="BackgroundImageFix"
-                                                                    result="effect1_dropShadow_8083_6489" />
-                                                                <feBlend mode="normal" in="SourceGraphic"
-                                                                    in2="effect1_dropShadow_8083_6489" result="shape" />
-                                                            </filter>
-                                                        </defs>
-                                                    </svg>
-                                                </i>
-                                            </button>
-                                        </div>
-                                        <figcaption class="library-card__info">
-                                            <div class="title-row">
-                                                <h3 class="library-card__title">Fav bands</h3>
-                                                <span class="library-card__count">6</span>
-                                            </div>
-                                            <p class="library-card__description">Linkin Park, Muse, and more</p>
-                                        </figcaption>
-                                    </article>
-                                </li>
-
-                                <li class="recent-library__item">
-                                    <article class="library-card">
-                                        <div class="library-card__media">
-                                            <img src="../assets/images/layout-images/meteora1.png" alt="Meteora"
-                                                class="library-card__img">
-                                            <button class="btn-pin" aria-label="Pin Liked Songs">
-                                                <i class="icon-pin" aria-hidden="true">
-                                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <g filter="url(#filter0_d_8083_6489)">
-                                                            <path
-                                                                d="M16.6066 2.5178L15.0888 0.999964M16.6066 2.5178L9.90624 9.21819C9.78313 9.3413 9.62232 9.41961 9.44949 9.44062L6.6962 9.77532C6.0516 9.85367 5.7803 10.6401 6.23945 11.0992L10.168 15.0278M16.6066 2.5178L22.678 8.58914M24.1958 10.107L22.678 8.58914M22.678 8.58914L15.9776 15.2895C15.8545 15.4126 15.7762 15.5734 15.7551 15.7463L15.4204 18.4996C15.3421 19.1442 14.5557 19.4155 14.0966 18.9563L10.168 15.0278M10.168 15.0278L5.00021 20.1956"
-                                                                stroke="#1ED760" stroke-width="2" stroke-linecap="round"
-                                                                stroke-linejoin="round" shape-rendering="crispEdges" />
-                                                        </g>
-                                                        <defs>
-                                                            <filter id="filter0_d_8083_6489" x="0" y="0" width="29.1958"
-                                                                height="29.1956" filterUnits="userSpaceOnUse"
-                                                                color-interpolation-filters="sRGB">
-                                                                <feFlood flood-opacity="0"
-                                                                    result="BackgroundImageFix" />
-                                                                <feColorMatrix in="SourceAlpha" type="matrix"
-                                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                                                    result="hardAlpha" />
-                                                                <feOffset dy="4" />
-                                                                <feGaussianBlur stdDeviation="2" />
-                                                                <feComposite in2="hardAlpha" operator="out" />
-                                                                <feColorMatrix type="matrix"
-                                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                                                                <feBlend mode="normal" in2="BackgroundImageFix"
-                                                                    result="effect1_dropShadow_8083_6489" />
-                                                                <feBlend mode="normal" in="SourceGraphic"
-                                                                    in2="effect1_dropShadow_8083_6489" result="shape" />
-                                                            </filter>
-                                                        </defs>
-                                                    </svg>
-                                                </i>
-                                            </button>
-                                        </div>
-                                        <figcaption class="library-card__info">
-                                            <h3 class="library-card__title">meteora</h3>
-                                            <p class="library-card__description">Linkin Park</p>
-                                        </figcaption>
-                                    </article>
-                                </li>
-                                <li class="recent-library__item">
-                                    <article class="library-card">
-                                        <div class="library-card__media">
-                                            <img src="../assets/images/layout-images/random.png"
-                                                alt="Random Access Memories" class="library-card__img">
-                                            <button class="btn-pin" aria-label="Pin Liked Songs">
-                                                <i class="icon-pin" aria-hidden="true">
-                                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <g filter="url(#filter0_d_8083_6489)">
-                                                            <path
-                                                                d="M16.6066 2.5178L15.0888 0.999964M16.6066 2.5178L9.90624 9.21819C9.78313 9.3413 9.62232 9.41961 9.44949 9.44062L6.6962 9.77532C6.0516 9.85367 5.7803 10.6401 6.23945 11.0992L10.168 15.0278M16.6066 2.5178L22.678 8.58914M24.1958 10.107L22.678 8.58914M22.678 8.58914L15.9776 15.2895C15.8545 15.4126 15.7762 15.5734 15.7551 15.7463L15.4204 18.4996C15.3421 19.1442 14.5557 19.4155 14.0966 18.9563L10.168 15.0278M10.168 15.0278L5.00021 20.1956"
-                                                                stroke="#1ED760" stroke-width="2" stroke-linecap="round"
-                                                                stroke-linejoin="round" shape-rendering="crispEdges" />
-                                                        </g>
-                                                        <defs>
-                                                            <filter id="filter0_d_8083_6489" x="0" y="0" width="29.1958"
-                                                                height="29.1956" filterUnits="userSpaceOnUse"
-                                                                color-interpolation-filters="sRGB">
-                                                                <feFlood flood-opacity="0"
-                                                                    result="BackgroundImageFix" />
-                                                                <feColorMatrix in="SourceAlpha" type="matrix"
-                                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                                                    result="hardAlpha" />
-                                                                <feOffset dy="4" />
-                                                                <feGaussianBlur stdDeviation="2" />
-                                                                <feComposite in2="hardAlpha" operator="out" />
-                                                                <feColorMatrix type="matrix"
-                                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                                                                <feBlend mode="normal" in2="BackgroundImageFix"
-                                                                    result="effect1_dropShadow_8083_6489" />
-                                                                <feBlend mode="normal" in="SourceGraphic"
-                                                                    in2="effect1_dropShadow_8083_6489" result="shape" />
-                                                            </filter>
-                                                        </defs>
-                                                    </svg>
-                                                </i>
-                                            </button>
-                                        </div>
-                                        <figcaption class="library-card__info">
-                                            <div class="title-row">
-                                                <h3 class="library-card__title">Random Access Memories</h3>
-                                                <span class="library-card__count">13</span>
-                                            </div>
-                                            <p class="library-card__description">Daft Punk</p>
-                                        </figcaption>
-                                    </article>
-                                </li>
-                                <li class="recent-library__item">
-                                    <article class="library-card">
-                                        <div class="library-card__media">
-                                            <img src="../assets/images/layout-images/abbey.png" alt="Abbey Road"
-                                                class="library-card__img">
-                                        </div>
-                                        <figcaption class="library-card__info">
-                                            <div class="title-row">
-                                                <h3 class="library-card__title">Abbey Road</h3>
-                                                <span class="library-card__count">13</span>
-                                            </div>
-                                            <p class="library-card__description">The Beatles</p>
-                                        </figcaption>
-                                    </article>
-                                </li>
-                                <li class="recent-library__item">
-                                    <article class="library-card">
-                                        <div class="library-card__media">
-                                            <img src="../assets/images/layout-images/black-holes.png" alt="Black Holes"
-                                                class="library-card__img">
-                                        </div>
-                                        <figcaption class="library-card__info">
-                                            <div class="title-row">
-                                                <h3 class="library-card__title">Black Holes and Revelations</h3>
-                                                <span class="library-card__count">13</span>
-                                            </div>
-                                            <p class="library-card__description">muse</p>
-                                        </figcaption>
-                                    </article>
-                                </li>
-                                <li class="recent-library__item">
-                                    <article class="library-card">
-                                        <div class="library-card__media">
-                                            <img src="../assets/images/layout-images/daily-mix1.png" alt="Daily Mix"
-                                                class="library-card__img">
-                                        </div>
-                                        <figcaption class="library-card__info">
-                                            <div class="title-row">
-                                                <h3 class="library-card__title">Daily Mix 1</h3>
-                                                <span class="library-card__count type--blue">50</span>
-                                            </div>
-                                            <p class="library-card__description">Linkin Park, System Of A Down, Coal
-                                                Chamber</p>
-                                        </figcaption>
-                                    </article>
-                                </li>
-                                <li class="recent-library__item">
-                                    <article class="library-card">
-                                        <div class="library-card__media">
-                                            <img src="../assets/images/layout-images/daily-mix2.png" alt="Daily Mix"
-                                                class="library-card__img">
-                                        </div>
-                                        <figcaption class="library-card__info">
-                                            <div class="title-row">
-                                                <h3 class="library-card__title">Daily Mix 2</h3>
-                                                <span class="library-card__count type--pink">50</span>
-                                            </div>
-                                            <p class="library-card__description">Avril Lavigne, Lorde, Charli XCX and
-                                                more</p>
-                                        </figcaption>
-                                    </article>
-                                </li>
-                                <li class="recent-library__item">
-                                    <article class="library-card">
-                                        <div class="library-card__media">
-                                            <img src="../assets/images/layout-images/daily-mix3.png" alt="Daily Mix"
-                                                class="library-card__img">
-                                        </div>
-                                        <figcaption class="library-card__info">
-                                            <div class="title-row">
-                                                <h3 class="library-card__title">Daily Mix 3</h3>
-                                                <span class="library-card__count type--mint">50</span>
-                                            </div>
-                                            <p class="library-card__description">The Strokes, Martin Garrix, MGMT and
-                                                more</p>
-                                        </figcaption>
-                                    </article>
-                                </li>
-                                <li class="recent-library__item">
-                                    <article class="library-card">
-                                        <div class="library-card__media">
-                                            <img src="../assets/images/layout-images/rock.png" alt="Rock Mix"
-                                                class="library-card__img">
-                                        </div>
-                                        <figcaption class="library-card__info">
-                                            <div class="title-row">
-                                                <h3 class="library-card__title">Rock Mix</h3>
-                                                <span class="library-card__count type--lime">50</span>
-                                            </div>
-                                            <p class="library-card__description">Red Hot Chili Peppers, R.E.M., Guns N’
-                                                Roses...</p>
-                                        </figcaption>
-                                    </article>
-                                </li>
-                                <li class="recent-library__item">
-                                    <article class="library-card">
-                                        <div class="library-card__media">
-                                            <img src="../assets/images/layout-images/chill.png" alt="Chill Mix"
-                                                class="library-card__img">
-                                        </div>
-                                        <figcaption class="library-card__info">
-                                            <div class="title-row">
-                                                <h3 class="library-card__title">Chill Mix</h3>
-                                                <span class="library-card__count type--yellow">50</span>
-                                            </div>
-                                            <p class="library-card__description">MF DOOM, Daft Punk, The Chainsmokers,
-                                                and more</p>
-                                        </figcaption>
-                                    </article>
-                                </li>
-                                <li class="recent-library__item">
-                                    <article class="library-card">
-                                        <div class="library-card__media">
-                                            <img src="../assets/images/layout-images/pop.png" alt="Pop Mix"
-                                                class="library-card__img">
-                                        </div>
-                                        <figcaption class="library-card__info">
-                                            <div class="title-row">
-                                                <h3 class="library-card__title">Pop Mix</h3>
-                                                <span class="library-card__count type--cyan">50</span>
-                                            </div>
-                                            <p class="library-card__description">Red Hot Chili Peppers, R.E.M., Guns N’
-                                                Roses...</p>
-                                        </figcaption>
-                                    </article>
-                                </li>
-                            </ul>
-                        </div>
-            </main>
-            <main class="mobile-main">
-                <div class="content">
-                    <button class="accordion-item">
-                        <span>Playlists</span>
-                        <img src="../assets/images/icon-images/arrow-icon.svg" alt="Arrow">
-                    </button>
-                </div>
-                <div class="content">
-                    <button class="accordion-item">
-                        <span>Playlists by Spotify</span>
-                        <img src="../assets/images/icon-images/arrow-icon.svg" alt="Arrow">
-                    </button>
-                </div>
-                <div class="content">
-                    <button class="accordion-item">
-                        <span>Albums</span>
-                        <img src="../assets/images/icon-images/arrow-icon.svg" alt="Arrow">
-                    </button>
-                </div>
-                <div class="content">
-                    <button class="accordion-item">
-                        <span>Folders</span>
-                        <img src="../assets/images/icon-images/arrow-icon.svg" alt="Arrow">
-                    </button>
-                </div>
-                <div class="content">
-                    <button class="accordion-item">
-                        <span>Artists</span>
-                        <img src="../assets/images/icon-images/arrow-icon.svg" alt="Arrow">
-                    </button>
-                </div>
-            </main>
-
-            <footer>
-                <!-- Start Desktop Footer Player, Progress Bar + Volume -->
-                <div class="player-wrapper">
-                    <!-- Left: Playback Controls -->
-                    <div class="player-left">
-                        <button class="btn-play-pause">
-                            <img src="../assets/images/icon-images/pause_icon.svg" alt="pause">
-                        </button>
-                        <button class="btn-prev">
-                            <img src="../assets/images/icon-images/prev_icon.svg" alt="previous">
-                        </button>
-                        <button class="btn-next">
-                            <img src="../assets/images/icon-images/next_icon.svg" alt="next">
-                        </button>
-                        <button class="btn-shuffle">
-                            <img src="../assets/images/icon-images/shuffle_icon.svg" alt="shuffle">
-                        </button>
-                        <button class="btn-loop">
-                            <img src="../assets/images/icon-images/loop_icon.svg" alt="loop">
-                        </button>
-                        <span class="time-current">2:23</span>
-                        <input class="progress-bar" type="range" min="0" max="100" value="52">
-                        <span class="time-total">4:45</span>
-                        <button class="btn-volume">
-                            <img src="../assets/images/icon-images/volume_icon.svg" alt="volume">
-                        </button>
-                    </div>
-
-                    <!-- Center: Song Info -->
-                    <div class="player-center">
-                        <figure class="player-album-cover">
-                            <img src="../assets/images/player_cover.png" alt="Get Lucky album art">
+    <input type="checkbox" id="library-toggle" class="toggle-checkbox">
+    <!-- In the aside tag, there is a navigation section where a list is used. -->
+    <aside class="aside">
+        <!-- a navigation section where a list is used. -->
+        <nav class="aside__nav">
+            <!--In lists, a div container is used to contain icons and a span for navigation labels. -->
+            <ul class="aside__nav__list nav-buttons nav-buttons--dark">
+                <li class="active">
+                    <a href="library.html">
+                        <figure>
+                            <label for="library-toggle" class="library-trigger">
+                                <img class="library-item" src="../assets/images/icon-images/library_icon.svg"
+                                    alt="library icon">
+                            </label>
+                            <figcaption class="nav-item">My Library</figcaption>
                         </figure>
-                        <div class="player-song-info">
-                            <span class="song-title">Get Lucky</span>
-                            <span class="song-artist">Deft Punk</span>
-                            <span class="song-album">Random Access Memories</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img class="pins" src="../assets/images/icon-images/pin.svg" alt="pin icon">
+                            <figcaption class="nav-item">Pins</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="play-list.html">
+                        <figure>
+                            <img src="../assets/images/icon-images/playlist_icon.svg" alt="Playlists icon">
+                            <figcaption class="nav-item">Playlists</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="song.html">
+                        <figure>
+                            <img src="../assets/images/icon-images/fav_icon.svg" alt="like icon">
+                            <figcaption class="nav-item">Liked songs</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../assets/images/icon-images/bookmark_icon.svg" alt="saves icon">
+                            <figcaption class="nav-item">Saves</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="albums.html">
+                        <figure>
+                            <img src="../assets/images/icon-images/album_icon.svg" alt="albums icon">
+                            <figcaption class="nav-item">Albums</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../assets/images/icon-images/folder_icon.svg" alt="folders icon">
+                            <figcaption class="nav-item">Folders</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../assets/images/icon-images/podcast_icon.svg" alt="podcasts icon">
+                            <figcaption class="nav-item">Podcasts</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../assets/images/icon-images/audio_books_icon.svg" alt="audiobooks icon">
+                            <figcaption class="nav-item">Audiobooks</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../assets/images/icon-images/artist_icon.svg" alt="artists icon">
+                            <figcaption class="nav-item">Artists</figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <header class="top-header">
+        <nav class="main-nav">
+            <ul class="nav-buttons nav-buttons--dark">
+                <li>
+                    <a href="../index.html">
+                        <figure>
+                            <img src="../assets/images/icon-images/home_icon.svg" alt="home">
+                            <figcaption>Home</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="discover.html">
+                        <figure>
+                            <img src="../assets/images/icon-images/discover_icon.svg" alt="discover">
+                            <figcaption>Discover</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <form action="search.html" method="get" role="search">
+                        <figure>
+                            <img src="../assets/images/icon-images/search_icon.svg" alt="search">
+                            <input class="search-input" type="search" name="q" placeholder="Search...">
+                        </figure>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="actions">
+            <ul>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../assets/images/icon-images/references.svg" alt="references">
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../assets/images/icon-images/block.svg" alt="block">
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../assets/images/icon-images/friends.svg" alt="friends">
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../assets/images/icon-images/setting.svg" alt="settings">
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../assets/images/icon-images/logo.svg" alt="Logo" class="user-logo">
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <header class="mobile-header">
+        <div class="status-bar">
+            <div class="status-left">
+                <span>9:41</span>
+                <img src="../assets/images/icon-images/icons8-navigation.png" alt="Location">
+            </div>
+            <div class="status-right">
+                <img src="../assets/images/icon-images/icons8-signal.png" alt="Signal">
+                <img src="../assets/images/icon-images/icons8-personal-hotspot-.png" alt="Personal Hotspot">
+                <img src="../assets/images/icon-images/battery android.png" alt="Battery">
+            </div>
+        </div>
+        <div class="search-section">
+            <div class="search-bar">
+                <img src="../assets/images/icon-images/search_icon.svg" alt="search">
+                <input type="text" placeholder="Search library">
+            </div>
+            <div class="plus-icon">
+                <button><img src="../assets/images/icon-images/plus.svg" alt="plus"></button>
+            </div>
+        </div>
+        <div class="filter-section">
+            <div class="group-tag">
+                <img src="../assets/images/icon-images/group.svg" alt="Group">
+                <span>Group</span>
+            </div>
+            <div class="recent-filter">
+                <span>Recent</span>
+                <button class="toggle-list">
+                    <img src="../assets/images/icon-images/Shuffle.png" class="view-icon" alt="shuffle icon">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- The first section of the main content, the first section uses the navigation bar and part of the article cards. -->
+        <section class="main-content__home-page-section">
+
+            <!-- Recent library -->
+            <div class="recent-library">
+                <header class="fixed-container-77">
+                    <div class="inner-wrapper-104">
+                        <div class="left-group-106">
+                            <div class="icons-block-187">
+                                <img src="../assets/images/icon-images/list.svg" class="icon" alt="list icon">
+                                <img src="../assets/images/icon-images/Shuffle.png" class="icon action-icons"
+                                    alt="shuffle icon">
+                            </div>
+                            <div class="info-block-85">
+                                <img src="../assets/images/icon-images/resent.svg" class="icon" alt="recent icon">
+                                <span class="text">Recent</span>
+                            </div>
+                            <div class="info-block-63">
+                                <img src="../assets/images/icon-images/group.svg" class="icon" alt="group icon">
+                                <span class="text">Group</span>
+                            </div>
+                            <div class="single-icon-34">
+                                <img src="../assets/images/icon-images/search_icon.svg" class="small-icon"
+                                    alt="search icon">
+                            </div>
+                        </div>
+                        <div class="right-group-84">
+                            <img src="../assets/images/icon-images/plus.svg" class="final-icon" alt="plus icon">
                         </div>
                     </div>
+                </header>
+                <div class="recent-library__content">
+                    <ul class="recent-library__list">
+                        <li class="recent-library__item">
+                            <article class="library-card">
+                                <div class="library-card__media">
+                                    <img src="../assets/images/layout-images/like-song.png"
+                                        alt="liked songs playlist cover" class="library-card__img">
+                                    <button class="btn-pin" aria-label="Pin Liked Songs">
+                                        <i class="icon-pin" aria-hidden="true">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g filter="url(#filter0_d_8083_6489)">
+                                                    <path
+                                                        d="M16.6066 2.5178L15.0888 0.999964M16.6066 2.5178L9.90624 9.21819C9.78313 9.3413 9.62232 9.41961 9.44949 9.44062L6.6962 9.77532C6.0516 9.85367 5.7803 10.6401 6.23945 11.0992L10.168 15.0278M16.6066 2.5178L22.678 8.58914M24.1958 10.107L22.678 8.58914M22.678 8.58914L15.9776 15.2895C15.8545 15.4126 15.7762 15.5734 15.7551 15.7463L15.4204 18.4996C15.3421 19.1442 14.5557 19.4155 14.0966 18.9563L10.168 15.0278M10.168 15.0278L5.00021 20.1956"
+                                                        stroke="#1ED760" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" shape-rendering="crispEdges" />
+                                                </g>
+                                                <defs>
+                                                    <filter id="filter0_d_8083_6489" x="0" y="0" width="29.1958"
+                                                        height="29.1956" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                            result="hardAlpha" />
+                                                        <feOffset dy="4" />
+                                                        <feGaussianBlur stdDeviation="2" />
+                                                        <feComposite in2="hardAlpha" operator="out" />
+                                                        <feColorMatrix type="matrix"
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                                            result="effect1_dropShadow_8083_6489" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_dropShadow_8083_6489" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </i>
+                                    </button>
+                                </div>
+                                <figcaption class="library-card__info">
+                                    <div class="title-row">
+                                        <h3 class="library-card__title">Liked Songs</h3>
+                                        <span class="library-card__count type--green">8</span>
+                                    </div>
+                                    <p class="library-card__description">Numb, Crawling, In the End, and more
+                                    </p>
+                                </figcaption>
+                            </article>
+                        </li>
+                        <li class="recent-library__item">
+                            <button class="btn-pin" aria-label="Pin Liked Songs">
+                                <i class="icon-pin" aria-hidden="true">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_d_8083_6489)">
+                                            <path
+                                                d="M16.6066 2.5178L15.0888 0.999964M16.6066 2.5178L9.90624 9.21819C9.78313 9.3413 9.62232 9.41961 9.44949 9.44062L6.6962 9.77532C6.0516 9.85367 5.7803 10.6401 6.23945 11.0992L10.168 15.0278M16.6066 2.5178L22.678 8.58914M24.1958 10.107L22.678 8.58914M22.678 8.58914L15.9776 15.2895C15.8545 15.4126 15.7762 15.5734 15.7551 15.7463L15.4204 18.4996C15.3421 19.1442 14.5557 19.4155 14.0966 18.9563L10.168 15.0278M10.168 15.0278L5.00021 20.1956"
+                                                stroke="#1ED760" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" shape-rendering="crispEdges" />
+                                        </g>
+                                        <defs>
+                                            <filter id="filter0_d_8083_6489" x="0" y="0" width="29.1958"
+                                                height="29.1956" filterUnits="userSpaceOnUse"
+                                                color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                    result="hardAlpha" />
+                                                <feOffset dy="4" />
+                                                <feGaussianBlur stdDeviation="2" />
+                                                <feComposite in2="hardAlpha" operator="out" />
+                                                <feColorMatrix type="matrix"
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                                <feBlend mode="normal" in2="BackgroundImageFix"
+                                                    result="effect1_dropShadow_8083_6489" />
+                                                <feBlend mode="normal" in="SourceGraphic"
+                                                    in2="effect1_dropShadow_8083_6489" result="shape" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+                                </i>
+                            </button>
+                            <figure>
+                                <img src="../assets/images/layout-images/David.png" alt="David Bowie"
+                                    class="recent-searches__img--circle">
+                                <figcaption>David Bowie</figcaption>
+                            </figure>
+                        </li>
+                        <li class="recent-library__item">
+                            <button class="btn-pin" aria-label="Pin Liked Songs">
+                                <i class="icon-pin" aria-hidden="true">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_d_8083_6489)">
+                                            <path
+                                                d="M16.6066 2.5178L15.0888 0.999964M16.6066 2.5178L9.90624 9.21819C9.78313 9.3413 9.62232 9.41961 9.44949 9.44062L6.6962 9.77532C6.0516 9.85367 5.7803 10.6401 6.23945 11.0992L10.168 15.0278M16.6066 2.5178L22.678 8.58914M24.1958 10.107L22.678 8.58914M22.678 8.58914L15.9776 15.2895C15.8545 15.4126 15.7762 15.5734 15.7551 15.7463L15.4204 18.4996C15.3421 19.1442 14.5557 19.4155 14.0966 18.9563L10.168 15.0278M10.168 15.0278L5.00021 20.1956"
+                                                stroke="#1ED760" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" shape-rendering="crispEdges" />
+                                        </g>
+                                        <defs>
+                                            <filter id="filter0_d_8083_6489" x="0" y="0" width="29.1958"
+                                                height="29.1956" filterUnits="userSpaceOnUse"
+                                                color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                    result="hardAlpha" />
+                                                <feOffset dy="4" />
+                                                <feGaussianBlur stdDeviation="2" />
+                                                <feComposite in2="hardAlpha" operator="out" />
+                                                <feColorMatrix type="matrix"
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                                <feBlend mode="normal" in2="BackgroundImageFix"
+                                                    result="effect1_dropShadow_8083_6489" />
+                                                <feBlend mode="normal" in="SourceGraphic"
+                                                    in2="effect1_dropShadow_8083_6489" result="shape" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+                                </i>
+                            </button>
+                            <figure>
+                                <img src="../assets/images/layout-images/dafft.png" alt="Daft Punk"
+                                    class="recent-searches__img">
+                                <figcaption>Daft Punk</figcaption>
+                            </figure>
+                        </li>
+                        <li class="recent-library__item">
+                            <article class="library-card">
+                                <div class="library-card__media">
+                                    <img src="../assets/images/layout-images/song-mark.png" alt="songs"
+                                        class="library-card__img">
+                                    <button class="btn-pin" aria-label="Pin Liked Songs">
+                                        <i class="icon-pin" aria-hidden="true">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g filter="url(#filter0_d_8083_6489)">
+                                                    <path
+                                                        d="M16.6066 2.5178L15.0888 0.999964M16.6066 2.5178L9.90624 9.21819C9.78313 9.3413 9.62232 9.41961 9.44949 9.44062L6.6962 9.77532C6.0516 9.85367 5.7803 10.6401 6.23945 11.0992L10.168 15.0278M16.6066 2.5178L22.678 8.58914M24.1958 10.107L22.678 8.58914M22.678 8.58914L15.9776 15.2895C15.8545 15.4126 15.7762 15.5734 15.7551 15.7463L15.4204 18.4996C15.3421 19.1442 14.5557 19.4155 14.0966 18.9563L10.168 15.0278M10.168 15.0278L5.00021 20.1956"
+                                                        stroke="#1ED760" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" shape-rendering="crispEdges" />
+                                                </g>
+                                                <defs>
+                                                    <filter id="filter0_d_8083_6489" x="0" y="0" width="29.1958"
+                                                        height="29.1956" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                            result="hardAlpha" />
+                                                        <feOffset dy="4" />
+                                                        <feGaussianBlur stdDeviation="2" />
+                                                        <feComposite in2="hardAlpha" operator="out" />
+                                                        <feColorMatrix type="matrix"
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                                            result="effect1_dropShadow_8083_6489" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_dropShadow_8083_6489" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </i>
+                                    </button>
+                                </div>
+                                <figcaption class="library-card__info">
+                                    <div class="title-row">
+                                        <h3 class="library-card__title">Chill Stuff</h3>
+                                        <span class="library-card__count">152</span>
+                                    </div>
+                                    <p class="library-card__description">Simon and Garfunkel, Daft Punk, and
+                                        more</p>
+                                </figcaption>
+                            </article>
+                        </li>
+                        <li class="recent-library__item">
+                            <article class="library-card">
+                                <div class="library-card__media">
+                                    <img src="../assets/images/layout-images/song-mark.png" alt="song"
+                                        class="library-card__img">
+                                    <button class="btn-pin" aria-label="Pin Liked Songs">
+                                        <i class="icon-pin" aria-hidden="true">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g filter="url(#filter0_d_8083_6489)">
+                                                    <path
+                                                        d="M16.6066 2.5178L15.0888 0.999964M16.6066 2.5178L9.90624 9.21819C9.78313 9.3413 9.62232 9.41961 9.44949 9.44062L6.6962 9.77532C6.0516 9.85367 5.7803 10.6401 6.23945 11.0992L10.168 15.0278M16.6066 2.5178L22.678 8.58914M24.1958 10.107L22.678 8.58914M22.678 8.58914L15.9776 15.2895C15.8545 15.4126 15.7762 15.5734 15.7551 15.7463L15.4204 18.4996C15.3421 19.1442 14.5557 19.4155 14.0966 18.9563L10.168 15.0278M10.168 15.0278L5.00021 20.1956"
+                                                        stroke="#1ED760" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" shape-rendering="crispEdges" />
+                                                </g>
+                                                <defs>
+                                                    <filter id="filter0_d_8083_6489" x="0" y="0" width="29.1958"
+                                                        height="29.1956" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                            result="hardAlpha" />
+                                                        <feOffset dy="4" />
+                                                        <feGaussianBlur stdDeviation="2" />
+                                                        <feComposite in2="hardAlpha" operator="out" />
+                                                        <feColorMatrix type="matrix"
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                                            result="effect1_dropShadow_8083_6489" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_dropShadow_8083_6489" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </i>
+                                    </button>
+                                </div>
+                                <figcaption class="library-card__info">
+                                    <div class="title-row">
+                                        <h3 class="library-card__title">The Jux Box</h3>
+                                        <span class="library-card__count">50</span>
+                                    </div>
+                                    <p class="library-card__description">Simon and Garfunkel, Daft Punk, and
+                                        more</p>
+                                </figcaption>
+                            </article>
+                        </li>
+                        <li class="recent-library__item">
+                            <article class="library-card">
+                                <div class="library-card__media">
+                                    <img src="../assets/images/layout-images/song-mark.png" alt="song"
+                                        class="library-card__img">
+                                    <button class="btn-pin" aria-label="Pin Liked Songs">
+                                        <i class="icon-pin" aria-hidden="true">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g filter="url(#filter0_d_8083_6489)">
+                                                    <path
+                                                        d="M16.6066 2.5178L15.0888 0.999964M16.6066 2.5178L9.90624 9.21819C9.78313 9.3413 9.62232 9.41961 9.44949 9.44062L6.6962 9.77532C6.0516 9.85367 5.7803 10.6401 6.23945 11.0992L10.168 15.0278M16.6066 2.5178L22.678 8.58914M24.1958 10.107L22.678 8.58914M22.678 8.58914L15.9776 15.2895C15.8545 15.4126 15.7762 15.5734 15.7551 15.7463L15.4204 18.4996C15.3421 19.1442 14.5557 19.4155 14.0966 18.9563L10.168 15.0278M10.168 15.0278L5.00021 20.1956"
+                                                        stroke="#1ED760" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" shape-rendering="crispEdges" />
+                                                </g>
+                                                <defs>
+                                                    <filter id="filter0_d_8083_6489" x="0" y="0" width="29.1958"
+                                                        height="29.1956" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                            result="hardAlpha" />
+                                                        <feOffset dy="4" />
+                                                        <feGaussianBlur stdDeviation="2" />
+                                                        <feComposite in2="hardAlpha" operator="out" />
+                                                        <feColorMatrix type="matrix"
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                                            result="effect1_dropShadow_8083_6489" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_dropShadow_8083_6489" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </i>
+                                    </button>
+                                </div>
+                                <figcaption class="library-card__info">
+                                    <div class="title-row">
+                                        <h3 class="library-card__title">Selected Linkin Park</h3>
+                                        <span class="library-card__count">8</span>
+                                    </div>
+                                    <p class="library-card__description">Numb, Crawling, In the End, and more
+                                    </p>
+                                </figcaption>
+                            </article>
+                        </li>
+                        <li class="recent-library__item">
+                            <article class="library-card">
+                                <div class="library-card__media">
+                                    <img src="../assets/images/layout-images/song-mark.png" alt="song"
+                                        class="library-card__img">
+                                    <button class="btn-pin" aria-label="Pin Liked Songs">
+                                        <i class="icon-pin" aria-hidden="true">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g filter="url(#filter0_d_8083_6489)">
+                                                    <path
+                                                        d="M16.6066 2.5178L15.0888 0.999964M16.6066 2.5178L9.90624 9.21819C9.78313 9.3413 9.62232 9.41961 9.44949 9.44062L6.6962 9.77532C6.0516 9.85367 5.7803 10.6401 6.23945 11.0992L10.168 15.0278M16.6066 2.5178L22.678 8.58914M24.1958 10.107L22.678 8.58914M22.678 8.58914L15.9776 15.2895C15.8545 15.4126 15.7762 15.5734 15.7551 15.7463L15.4204 18.4996C15.3421 19.1442 14.5557 19.4155 14.0966 18.9563L10.168 15.0278M10.168 15.0278L5.00021 20.1956"
+                                                        stroke="#1ED760" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" shape-rendering="crispEdges" />
+                                                </g>
+                                                <defs>
+                                                    <filter id="filter0_d_8083_6489" x="0" y="0" width="29.1958"
+                                                        height="29.1956" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                            result="hardAlpha" />
+                                                        <feOffset dy="4" />
+                                                        <feGaussianBlur stdDeviation="2" />
+                                                        <feComposite in2="hardAlpha" operator="out" />
+                                                        <feColorMatrix type="matrix"
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                                            result="effect1_dropShadow_8083_6489" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_dropShadow_8083_6489" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </i>
+                                    </button>
+                                </div>
+                                <figcaption class="library-card__info">
+                                    <div class="title-row">
+                                        <h3 class="library-card__title">Vibe</h3>
+                                        <span class="library-card__count">30</span>
+                                    </div>
+                                    <p class="library-card__description">Blue Skies, No Heaven</p>
+                                </figcaption>
+                            </article>
+                        </li>
+                        <li class="recent-library__item">
+                            <article class="library-card">
+                                <div class="library-card__media">
+                                    <img src="../assets/images/layout-images/forder.png" alt="forder"
+                                        class="library-card__img">
+                                    <button class="btn-pin" aria-label="Pin Liked Songs">
+                                        <i class="icon-pin" aria-hidden="true">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g filter="url(#filter0_d_8083_6489)">
+                                                    <path
+                                                        d="M16.6066 2.5178L15.0888 0.999964M16.6066 2.5178L9.90624 9.21819C9.78313 9.3413 9.62232 9.41961 9.44949 9.44062L6.6962 9.77532C6.0516 9.85367 5.7803 10.6401 6.23945 11.0992L10.168 15.0278M16.6066 2.5178L22.678 8.58914M24.1958 10.107L22.678 8.58914M22.678 8.58914L15.9776 15.2895C15.8545 15.4126 15.7762 15.5734 15.7551 15.7463L15.4204 18.4996C15.3421 19.1442 14.5557 19.4155 14.0966 18.9563L10.168 15.0278M10.168 15.0278L5.00021 20.1956"
+                                                        stroke="#1ED760" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" shape-rendering="crispEdges" />
+                                                </g>
+                                                <defs>
+                                                    <filter id="filter0_d_8083_6489" x="0" y="0" width="29.1958"
+                                                        height="29.1956" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                            result="hardAlpha" />
+                                                        <feOffset dy="4" />
+                                                        <feGaussianBlur stdDeviation="2" />
+                                                        <feComposite in2="hardAlpha" operator="out" />
+                                                        <feColorMatrix type="matrix"
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                                            result="effect1_dropShadow_8083_6489" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_dropShadow_8083_6489" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </i>
+                                    </button>
+                                </div>
+                                <figcaption class="library-card__info">
+                                    <div class="title-row">
+                                        <h3 class="library-card__title">Fav bands</h3>
+                                        <span class="library-card__count">6</span>
+                                    </div>
+                                    <p class="library-card__description">Linkin Park, Muse, and more</p>
+                                </figcaption>
+                            </article>
+                        </li>
 
-                    <!-- Right: Actions + Profile -->
-                    <div class="player-right">
-                        <div class="player-actions">
-                            <button class="btn-fav">
-                                <img src="../assets/images/icon-images/fav_icon.svg" alt="favorite">
-                            </button>
-                            <button class="btn-add">
-                                <img src="../assets/images/icon-images/add_icon.svg" alt="add">
-                            </button>
-                            <button class="btn-lyrics">
-                                <img src="../assets/images/icon-images/lyrics_icon.svg" alt="lyrics">
-                            </button>
-                            <button class="btn-device">
-                                <img src="../assets/images/icon-images/device_icon.svg" alt="device">
-                            </button>
-                            <button class="btn-more">
-                                <img src="../assets/images/icon-images/more_icon.svg" alt="more">
-                            </button>
-                            <button class="btn-avatar">
-                                <img src="../assets/images/icon-images/avatar_icon.svg" alt="avatar">
-                            </button>
-                            <button class="btn-menu">
-                                <img src="../assets/images/icon-images/menu_icon.svg" alt="menu">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Desktop Footer Player -->
-
-                <!-- Start Mobile Footer Menu -->
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <figure>
-                                    <img src="../assets/images/icon-images/home_icon.svg" alt="home">
-                                    <figcaption>Home</figcaption>
-                                </figure>
-                            </a>
+                        <li class="recent-library__item">
+                            <article class="library-card">
+                                <div class="library-card__media">
+                                    <img src="../assets/images/layout-images/meteora1.png" alt="Meteora"
+                                        class="library-card__img">
+                                    <button class="btn-pin" aria-label="Pin Liked Songs">
+                                        <i class="icon-pin" aria-hidden="true">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g filter="url(#filter0_d_8083_6489)">
+                                                    <path
+                                                        d="M16.6066 2.5178L15.0888 0.999964M16.6066 2.5178L9.90624 9.21819C9.78313 9.3413 9.62232 9.41961 9.44949 9.44062L6.6962 9.77532C6.0516 9.85367 5.7803 10.6401 6.23945 11.0992L10.168 15.0278M16.6066 2.5178L22.678 8.58914M24.1958 10.107L22.678 8.58914M22.678 8.58914L15.9776 15.2895C15.8545 15.4126 15.7762 15.5734 15.7551 15.7463L15.4204 18.4996C15.3421 19.1442 14.5557 19.4155 14.0966 18.9563L10.168 15.0278M10.168 15.0278L5.00021 20.1956"
+                                                        stroke="#1ED760" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" shape-rendering="crispEdges" />
+                                                </g>
+                                                <defs>
+                                                    <filter id="filter0_d_8083_6489" x="0" y="0" width="29.1958"
+                                                        height="29.1956" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                            result="hardAlpha" />
+                                                        <feOffset dy="4" />
+                                                        <feGaussianBlur stdDeviation="2" />
+                                                        <feComposite in2="hardAlpha" operator="out" />
+                                                        <feColorMatrix type="matrix"
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                                            result="effect1_dropShadow_8083_6489" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_dropShadow_8083_6489" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </i>
+                                    </button>
+                                </div>
+                                <figcaption class="library-card__info">
+                                    <h3 class="library-card__title">meteora</h3>
+                                    <p class="library-card__description">Linkin Park</p>
+                                </figcaption>
+                            </article>
                         </li>
-                        <li>
-                            <a href="#">
-                                <figure>
-                                    <img src="../assets/images/icon-images/discover_icon.svg" alt="discover">
-                                    <figcaption>Discover</figcaption>
-                                </figure>
-                            </a>
+                        <li class="recent-library__item">
+                            <article class="library-card">
+                                <div class="library-card__media">
+                                    <img src="../assets/images/layout-images/random.png" alt="Random Access Memories"
+                                        class="library-card__img">
+                                    <button class="btn-pin" aria-label="Pin Liked Songs">
+                                        <i class="icon-pin" aria-hidden="true">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g filter="url(#filter0_d_8083_6489)">
+                                                    <path
+                                                        d="M16.6066 2.5178L15.0888 0.999964M16.6066 2.5178L9.90624 9.21819C9.78313 9.3413 9.62232 9.41961 9.44949 9.44062L6.6962 9.77532C6.0516 9.85367 5.7803 10.6401 6.23945 11.0992L10.168 15.0278M16.6066 2.5178L22.678 8.58914M24.1958 10.107L22.678 8.58914M22.678 8.58914L15.9776 15.2895C15.8545 15.4126 15.7762 15.5734 15.7551 15.7463L15.4204 18.4996C15.3421 19.1442 14.5557 19.4155 14.0966 18.9563L10.168 15.0278M10.168 15.0278L5.00021 20.1956"
+                                                        stroke="#1ED760" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" shape-rendering="crispEdges" />
+                                                </g>
+                                                <defs>
+                                                    <filter id="filter0_d_8083_6489" x="0" y="0" width="29.1958"
+                                                        height="29.1956" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                            result="hardAlpha" />
+                                                        <feOffset dy="4" />
+                                                        <feGaussianBlur stdDeviation="2" />
+                                                        <feComposite in2="hardAlpha" operator="out" />
+                                                        <feColorMatrix type="matrix"
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                                            result="effect1_dropShadow_8083_6489" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_dropShadow_8083_6489" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </i>
+                                    </button>
+                                </div>
+                                <figcaption class="library-card__info">
+                                    <div class="title-row">
+                                        <h3 class="library-card__title">Random Access Memories</h3>
+                                        <span class="library-card__count">13</span>
+                                    </div>
+                                    <p class="library-card__description">Daft Punk</p>
+                                </figcaption>
+                            </article>
                         </li>
-                        <li>
-                            <a href="#">
-                                <figure>
-                                    <img src="../assets/images/icon-images/search_icon.svg" alt="search">
-                                    <figcaption>Search</figcaption>
-                                </figure>
-                            </a>
+                        <li class="recent-library__item">
+                            <article class="library-card">
+                                <div class="library-card__media">
+                                    <img src="../assets/images/layout-images/abbey.png" alt="Abbey Road"
+                                        class="library-card__img">
+                                </div>
+                                <figcaption class="library-card__info">
+                                    <div class="title-row">
+                                        <h3 class="library-card__title">Abbey Road</h3>
+                                        <span class="library-card__count">13</span>
+                                    </div>
+                                    <p class="library-card__description">The Beatles</p>
+                                </figcaption>
+                            </article>
                         </li>
-                        <li>
-                            <a href="#">
-                                <figure>
-                                    <img src="../assets/images/icon-images/library_icon.svg" alt="library">
-                                    <figcaption>Library</figcaption>
-                                </figure>
-                            </a>
+                        <li class="recent-library__item">
+                            <article class="library-card">
+                                <div class="library-card__media">
+                                    <img src="../assets/images/layout-images/black-holes.png" alt="Black Holes"
+                                        class="library-card__img">
+                                </div>
+                                <figcaption class="library-card__info">
+                                    <div class="title-row">
+                                        <h3 class="library-card__title">Black Holes and Revelations</h3>
+                                        <span class="library-card__count">13</span>
+                                    </div>
+                                    <p class="library-card__description">muse</p>
+                                </figcaption>
+                            </article>
                         </li>
-                        <li>
-                            <a href="#">
-                                <figure>
-                                    <img src="../assets/images/icon-images/me_icon.svg" alt="me">
-                                    <figcaption>Me</figcaption>
-                                </figure>
-                            </a>
+                        <li class="recent-library__item">
+                            <article class="library-card">
+                                <div class="library-card__media">
+                                    <img src="../assets/images/layout-images/daily-mix1.png" alt="Daily Mix"
+                                        class="library-card__img">
+                                </div>
+                                <figcaption class="library-card__info">
+                                    <div class="title-row">
+                                        <h3 class="library-card__title">Daily Mix 1</h3>
+                                        <span class="library-card__count type--blue">50</span>
+                                    </div>
+                                    <p class="library-card__description">Linkin Park, System Of A Down, Coal
+                                        Chamber</p>
+                                </figcaption>
+                            </article>
+                        </li>
+                        <li class="recent-library__item">
+                            <article class="library-card">
+                                <div class="library-card__media">
+                                    <img src="../assets/images/layout-images/daily-mix2.png" alt="Daily Mix"
+                                        class="library-card__img">
+                                </div>
+                                <figcaption class="library-card__info">
+                                    <div class="title-row">
+                                        <h3 class="library-card__title">Daily Mix 2</h3>
+                                        <span class="library-card__count type--pink">50</span>
+                                    </div>
+                                    <p class="library-card__description">Avril Lavigne, Lorde, Charli XCX and
+                                        more</p>
+                                </figcaption>
+                            </article>
+                        </li>
+                        <li class="recent-library__item">
+                            <article class="library-card">
+                                <div class="library-card__media">
+                                    <img src="../assets/images/layout-images/daily-mix3.png" alt="Daily Mix"
+                                        class="library-card__img">
+                                </div>
+                                <figcaption class="library-card__info">
+                                    <div class="title-row">
+                                        <h3 class="library-card__title">Daily Mix 3</h3>
+                                        <span class="library-card__count type--mint">50</span>
+                                    </div>
+                                    <p class="library-card__description">The Strokes, Martin Garrix, MGMT and
+                                        more</p>
+                                </figcaption>
+                            </article>
+                        </li>
+                        <li class="recent-library__item">
+                            <article class="library-card">
+                                <div class="library-card__media">
+                                    <img src="../assets/images/layout-images/rock.png" alt="Rock Mix"
+                                        class="library-card__img">
+                                </div>
+                                <figcaption class="library-card__info">
+                                    <div class="title-row">
+                                        <h3 class="library-card__title">Rock Mix</h3>
+                                        <span class="library-card__count type--lime">50</span>
+                                    </div>
+                                    <p class="library-card__description">Red Hot Chili Peppers, R.E.M., Guns N’
+                                        Roses...</p>
+                                </figcaption>
+                            </article>
+                        </li>
+                        <li class="recent-library__item">
+                            <article class="library-card">
+                                <div class="library-card__media">
+                                    <img src="../assets/images/layout-images/chill.png" alt="Chill Mix"
+                                        class="library-card__img">
+                                </div>
+                                <figcaption class="library-card__info">
+                                    <div class="title-row">
+                                        <h3 class="library-card__title">Chill Mix</h3>
+                                        <span class="library-card__count type--yellow">50</span>
+                                    </div>
+                                    <p class="library-card__description">MF DOOM, Daft Punk, The Chainsmokers,
+                                        and more</p>
+                                </figcaption>
+                            </article>
+                        </li>
+                        <li class="recent-library__item">
+                            <article class="library-card">
+                                <div class="library-card__media">
+                                    <img src="../assets/images/layout-images/pop.png" alt="Pop Mix"
+                                        class="library-card__img">
+                                </div>
+                                <figcaption class="library-card__info">
+                                    <div class="title-row">
+                                        <h3 class="library-card__title">Pop Mix</h3>
+                                        <span class="library-card__count type--cyan">50</span>
+                                    </div>
+                                    <p class="library-card__description">Red Hot Chili Peppers, R.E.M., Guns N’
+                                        Roses...</p>
+                                </figcaption>
+                            </article>
                         </li>
                     </ul>
-                </nav>
-                <!-- End Mobile Footer Menu -->
-            </footer>
+                </div>
+    </main>
+    <main class="mobile-main">
+        <div class="content">
+            <button class="accordion-item">
+                <span>Playlists</span>
+                <img src="../assets/images/icon-images/arrow-icon.svg" alt="Arrow">
+            </button>
         </div>
-    </div>
+        <div class="content">
+            <button class="accordion-item">
+                <span>Playlists by Spotify</span>
+                <img src="../assets/images/icon-images/arrow-icon.svg" alt="Arrow">
+            </button>
+        </div>
+        <div class="content">
+            <button class="accordion-item">
+                <span>Albums</span>
+                <img src="../assets/images/icon-images/arrow-icon.svg" alt="Arrow">
+            </button>
+        </div>
+        <div class="content">
+            <button class="accordion-item">
+                <span>Folders</span>
+                <img src="../assets/images/icon-images/arrow-icon.svg" alt="Arrow">
+            </button>
+        </div>
+        <div class="content">
+            <button class="accordion-item">
+                <span>Artists</span>
+                <img src="../assets/images/icon-images/arrow-icon.svg" alt="Arrow">
+            </button>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Start Desktop Footer Player, Progress Bar + Volume -->
+        <div class="player-wrapper">
+            <!-- Left: Playback Controls -->
+            <div class="player-left">
+                <button class="btn-play-pause">
+                    <img src="../assets/images/icon-images/pause_icon.svg" alt="pause">
+                </button>
+                <button class="btn-prev">
+                    <img src="../assets/images/icon-images/prev_icon.svg" alt="previous">
+                </button>
+                <button class="btn-next">
+                    <img src="../assets/images/icon-images/next_icon.svg" alt="next">
+                </button>
+                <button class="btn-shuffle">
+                    <img src="../assets/images/icon-images/shuffle_icon.svg" alt="shuffle">
+                </button>
+                <button class="btn-loop">
+                    <img src="../assets/images/icon-images/loop_icon.svg" alt="loop">
+                </button>
+                <span class="time-current">2:23</span>
+                <input class="progress-bar" type="range" min="0" max="100" value="52">
+                <span class="time-total">4:45</span>
+                <button class="btn-volume">
+                    <img src="../assets/images/icon-images/volume_icon.svg" alt="volume">
+                </button>
+            </div>
+
+            <!-- Center: Song Info -->
+            <div class="player-center">
+                <figure class="player-album-cover">
+                    <img src="../assets/images/player_cover.png" alt="Get Lucky album art">
+                </figure>
+                <div class="player-song-info">
+                    <span class="song-title">Get Lucky</span>
+                    <span class="song-artist">Deft Punk</span>
+                    <span class="song-album">Random Access Memories</span>
+                </div>
+            </div>
+
+            <!-- Right: Actions + Profile -->
+            <div class="player-right">
+                <div class="player-actions">
+                    <button class="btn-fav">
+                        <img src="../assets/images/icon-images/fav_icon.svg" alt="favorite">
+                    </button>
+                    <button class="btn-add">
+                        <img src="../assets/images/icon-images/add_icon.svg" alt="add">
+                    </button>
+                    <button class="btn-lyrics">
+                        <img src="../assets/images/icon-images/lyrics_icon.svg" alt="lyrics">
+                    </button>
+                    <button class="btn-device">
+                        <img src="../assets/images/icon-images/device_icon.svg" alt="device">
+                    </button>
+                    <button class="btn-more">
+                        <img src="../assets/images/icon-images/more_icon.svg" alt="more">
+                    </button>
+                    <button class="btn-avatar">
+                        <img src="../assets/images/icon-images/avatar_icon.svg" alt="avatar">
+                    </button>
+                    <button class="btn-menu">
+                        <img src="../assets/images/icon-images/menu_icon.svg" alt="menu">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- End Desktop Footer Player -->
+
+        <!-- Start Mobile Footer Menu -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../assets/images/icon-images/home_icon.svg" alt="home">
+                            <figcaption>Home</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../assets/images/icon-images/discover_icon.svg" alt="discover">
+                            <figcaption>Discover</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../assets/images/icon-images/search_icon.svg" alt="search">
+                            <figcaption>Search</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../assets/images/icon-images/library_icon.svg" alt="library">
+                            <figcaption>Library</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="../assets/images/icon-images/me_icon.svg" alt="me">
+                            <figcaption>Me</figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- End Mobile Footer Menu -->
+    </footer>
 </body>
 
 </html>

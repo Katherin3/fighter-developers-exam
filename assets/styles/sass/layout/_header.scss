@@ -3,7 +3,11 @@
 
 .top-header {
     @include flex-align(space-between);
-    margin: 10px 10px 10px 0;
+    margin-top: 10px;
+    position: fixed;
+    top: 0;
+    left: $aside-width;
+    right: 0;
 
     .main-nav ul.nav-buttons {
         @include nav-list(row); // row for header
