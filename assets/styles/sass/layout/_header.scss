@@ -9,6 +9,10 @@
         @include nav-list(row); // row for header
     }
 
+    .search-input {
+        color: $gray-color;
+    }
+
     .actions {
         ul {
             @include flex-align(center);
