@@ -5,51 +5,8 @@
     @include flex-align(space-between);
     margin: 10px 10px 10px 0;
 
-    .main-nav {
-        ul {
-            @include flex-align(space-between);
-            gap: 10px;
-
-            li {
-                border-radius: 10px;
-                transition: 0.3s;
-
-                &.active,
-                &:hover {
-                    background-color: $tag-bg;
-
-                    a {
-                        color: $light-gray-color;
-
-                        img {
-                            opacity: 1;
-                        }
-                    }
-                }
-
-                a {
-                    display: block;
-                    padding: 10px 100px 10px 20px;
-                    color: $gray-color;
-                    transition: 0.3s;
-
-                    figure {
-                        @include flex-align(center);
-                        gap: 15px;
-
-                        img {
-                            opacity: 0.5;
-                            transition: 0.3s;
-                        }
-                    }
-
-                    figcaption {
-                        font-size: 1.4rem;
-                        letter-spacing: 3%;
-                    }
-                }
-            }
-        }
+    .main-nav ul.nav-buttons {
+        @include nav-list(row); // row for header
     }
 
     .actions {
