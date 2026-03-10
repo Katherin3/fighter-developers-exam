@@ -1,5 +1,6 @@
 @use "../abstracts/mixins" as *;
 @use "../abstracts/variables" as *;
+
 // Main Content
 .main-content {
   max-width: 100%;
@@ -15,7 +16,7 @@ li.active {
   all: unset;
   color: white;
   opacity: 1;
-  filter: brightness(0) invert(1);
+  // filter: brightness(0) invert(1);
   display: flex;
 }
 
@@ -68,6 +69,7 @@ li.active {
         height: 40.41px;
         border-radius: 5px;
       }
+
       .icon.action-icons {
         all: unset;
         color: white;
@@ -89,6 +91,7 @@ li.active {
         width: 40.41px;
         height: 40.41px;
       }
+
       .text {
         width: 45px;
         height: 19px;
@@ -108,6 +111,7 @@ li.active {
         width: 40.41px;
         height: 40.41px;
       }
+
       .text {
         width: 41px;
         height: 19px;
@@ -193,27 +197,32 @@ li.active {
     font-size: 6px;
     text-align: center;
   }
+
   .title-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     h3 {
       font-size: 10px;
       margin: 0;
       color: $light-gray-color;
     }
+
     span {
       font-size: 10px;
       color: $light-gray-color;
       opacity: 0.7;
     }
   }
+
   p {
     font-size: 10px;
     color: $light-gray-color;
     opacity: 0.6;
     margin: 2px 0 0 0;
   }
+
   figcaption {
     color: $light-gray-color;
     font-size: 1.1rem;
@@ -244,22 +253,26 @@ $type-colors: (
 }
 
 @media screen and (max-width: 390px) {
+
   .aside,
   .fixed-container-77,
   .main-content {
     display: none;
   }
+
   .layout {
     display: block;
     padding: 0;
     margin: 0;
   }
+
   .main-wrapper {
     padding: 0;
     width: 100%;
-    max-width: 100%; 
+    max-width: 100%;
     margin: 0;
   }
+
   .mobile-header,
   .mobile-main {
     display: block;
@@ -278,23 +291,27 @@ $type-colors: (
     padding-top: 5px;
     padding-right: 10px;
   }
+
   .status-left {
     display: flex;
     align-items: center;
     gap: 5px;
     padding-left: 25px;
   }
+
   .status-left img {
     width: 12px;
     height: auto;
     opacity: 0.6;
   }
+
   .status-right {
     display: flex;
     align-items: center;
     gap: 5px;
     padding-left: 25px;
   }
+
   .status-right img {
     width: 12px;
     height: auto;
@@ -323,9 +340,11 @@ $type-colors: (
         outline: none;
       }
     }
+
     .plus-icon {
       background: transparent;
       border: none;
+
       img {
         width: 25px;
         height: auto;
@@ -340,6 +359,7 @@ $type-colors: (
     gap: 50px;
     padding: 10px 20px;
     color: white;
+
     .group-tag,
     .recent-filter {
       display: flex;
@@ -352,11 +372,13 @@ $type-colors: (
     width: 100%;
     margin: 0;
     max-width: none;
-    .content { 
+
+    .content {
       display: flex;
       flex-direction: column;
       width: 100%;
     }
+
     .accordion-item {
       display: flex;
       justify-content: space-between;

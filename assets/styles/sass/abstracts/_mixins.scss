@@ -6,6 +6,16 @@
     align-items: $align;
 }
 
+@mixin nav-list($direction: column) {
+    @include flex-align(space-between);
+    @if $direction == row {
+        flex-direction: row;
+    } @else {
+        flex-direction: column;
+    }
+    gap: 10px;
+}
+
 @mixin layout-title-h1() {
     font-family: "Satoshi-Bold", sans-serif;
     font-size: 30px;
