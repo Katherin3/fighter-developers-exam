@@ -27,6 +27,24 @@ main {
     bottom: $footer-height;
     overflow-y: auto;
 
+    // Firefox
+    scrollbar-width: thin;
+    scrollbar-color: $dark-bg transparent;
+
+    // Chrome, Edge, Safari
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $dark-bg;
+        border-radius: 10px;
+    }
+
     section {
         border: 1px solid #202020;
         border-radius: 10px;
