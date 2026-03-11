@@ -41,9 +41,7 @@
     top: 0;
     bottom: 0;
     width: $aside-width;
-    height: 100vh;
     padding: 11px;
-    overflow: hidden;
 
     .aside__nav__list {
         a {
@@ -61,4 +59,50 @@
     }
 }
 
-// git checkout -b feature/aside-navbar
+.right-aside {
+    position: fixed;
+    right: 10px;
+    top: $header-height;
+    bottom: calc($footer-height + 10px);
+    width: calc($right-aside-width - 15px);
+    padding: 20px;
+    border: 1px solid $tag-bg;
+    border-radius: 10px;
+    display: none;
+
+    h4 {
+        @include layout-title-h4();
+    }
+
+    &__nav {
+        @include flex-align(space-between, center);
+    }
+
+    &__buttons {
+        @include flex-align(flex-start, center);
+        gap: 30px;
+
+        img {
+            transition: 0.3s;
+            cursor: pointer;
+            opacity: 0.5;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+#right-aside:target {
+    transition: 0.3s;
+    display: block;
+}
+
+#right-aside:target~header a[href="#right-aside"] img {
+    opacity: 1;
+}
+
+#right-aside:target~main {
+    right: $right-aside-width;
+}

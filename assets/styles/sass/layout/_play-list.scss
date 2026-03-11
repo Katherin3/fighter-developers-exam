@@ -5,13 +5,13 @@
 @use "../components/tags" as *;
 @use "../layout/aside" as *;
 
-.play-list-section {
+main:has(.play-list-section) {
     background: linear-gradient(180deg, rgba(59, 79, 182, 1) 0%, rgba(6, 6, 6, 1) 100%);
-    display: flex;
-    width: 100%;
-    height: auto;
-    padding: 0;
-    border: none;
+    padding: 37px;
+}
+
+.play-list-section {
+    @include flex-align(space-between, center);
 
     .play-list-section__list-card {
         max-width: 978px;
