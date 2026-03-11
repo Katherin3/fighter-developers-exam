@@ -23,9 +23,13 @@ main {
     position: fixed;
     top: $header-height;
     left: $aside-width;
-    right: 0;
-    bottom: $footer-height;
+    right: 10px;
+    border: 1px solid #202020;
+    border-radius: 10px;
+    padding: 12px 25px;
+    bottom: calc($footer-height + 10px);
     overflow-y: auto;
+    transition: 0.3s;
 
     // Firefox
     scrollbar-width: thin;
@@ -46,9 +50,6 @@ main {
     }
 
     section {
-        border: 1px solid #202020;
-        border-radius: 10px;
-        padding: 6px 25px;
 
         @media screen and (max-width: 390px) {
             width: 390px;

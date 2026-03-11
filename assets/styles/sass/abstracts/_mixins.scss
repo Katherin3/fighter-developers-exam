@@ -8,11 +8,15 @@
 
 @mixin nav-list($direction: column) {
     @include flex-align(space-between);
-    @if $direction == row {
+
+    @if $direction ==row {
         flex-direction: row;
-    } @else {
+    }
+
+    @else {
         flex-direction: column;
     }
+
     gap: 10px;
 }
 
@@ -41,6 +45,15 @@
     display: inline-flex;
     align-items: center;
     font-size: 18px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 3%;
+    color: $light-gray-color;
+}
+
+@mixin layout-title-h4() {
+    font-family: "Satoshi-Medium", sans-serif;
+    font-size: 14px;
     font-weight: 500;
     line-height: 100%;
     letter-spacing: 3%;

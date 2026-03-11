@@ -6,13 +6,13 @@
 @use "../base/reset" as *;
 @use "../layout/aside" as *;
 
-.albums-section {
+main:has(.albums-section) {
   background: linear-gradient(180deg, rgb(21, 22, 24) 0%, rgba(6, 6, 6, 1) 100%);
-  display: flex;
-  width: 100%;
-  height: auto;
-  padding: 0;
-  border: none;
+  padding: 37px;
+}
+
+.albums-section {
+  @include flex-align(space-between, flex-start);
 
   .albums-section__list-card {
     max-width: 978px;
@@ -20,10 +20,6 @@
     height: auto;
 
     header {
-      width: 100%;
-      height: auto;
-      padding: 22px 5px 0 37px;
-
       h1 {
         color: #e0e0e0;
         font-size: 36px;
@@ -105,7 +101,7 @@
   .albums-section__main-page {
     width: auto;
     height: auto;
-    margin: 22px 30px 86px 38px;
+    margin: 0 30px 86px 38px;
 
     img {
       width: 400px;

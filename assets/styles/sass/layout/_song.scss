@@ -5,16 +5,18 @@
 @use "../components/tags" as *;
 @use "../layout/aside" as *;
 
-.song-section {
+main:has(.song-section) {
     background: linear-gradient(180deg, rgba(138, 157, 187, 0.18), rgba(6, 6, 6, 1) 100%);
+    padding: 37px;
+
+}
+
+.song-section {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: auto;
     padding: 0;
-    border: 1px solid rgba(32, 32, 32, 1);
-    border-radius: 10px;
-    padding: 37px;
     gap: 20px;
 
     .song-main-card {
