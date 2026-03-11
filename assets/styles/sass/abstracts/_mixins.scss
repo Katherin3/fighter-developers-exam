@@ -6,7 +6,27 @@
     align-items: $align;
 }
 
+@mixin nav-list($direction: column) {
+    @include flex-align(space-between);
+    @if $direction == row {
+        flex-direction: row;
+    } @else {
+        flex-direction: column;
+    }
+    gap: 10px;
+}
+
+@mixin layout-title-h1() {
+    font-family: "Satoshi-Bold", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 3%;
+    color: $light-gray-color;
+}
+
 @mixin layout-title-h2() {
+    font-family: "Satoshi-Bold", sans-serif;
     display: inline-flex;
     align-items: center;
     font-size: 20px;
@@ -17,6 +37,7 @@
 }
 
 @mixin layout-title-h3() {
+    font-family: "Satoshi-Medium", sans-serif;
     display: inline-flex;
     align-items: center;
     font-size: 18px;

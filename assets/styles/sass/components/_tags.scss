@@ -1,0 +1,59 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+
+ul.tags {
+    @include flex-align(flex-start, center);
+    margin: 6px 0;
+
+    li {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: 3%;
+        margin-right: 10px;
+        border-radius: 8px;
+        text-align: center;
+        transition: 0.5s;
+
+        a {
+            display: block;
+            padding: 8px 15px;
+        }
+    }
+
+    &--dark {
+        li {
+            color: $light-gray-color;
+            background-color: $tag-bg;
+            border: 1px solid $tag-bg;
+
+            &:hover {
+                background-color: $light-gray-color;
+                color: $dark-bg;
+            }
+
+            &.active {
+                background-color: $light-gray-color;
+                color: $dark-bg;
+            }
+        }
+    }
+
+    &--light {
+        li {
+            color: $gray-color;
+            background-color: $tag-bg;
+            border: 1px solid $gray-color;
+
+            &:hover {
+                background-color: $gray-color;
+                color: $tag-bg;
+            }
+
+            &.active {
+                background-color: $gray-color;
+                color: $tag-bg;
+            }
+        }
+    }
+}

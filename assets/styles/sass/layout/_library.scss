@@ -1,15 +1,5 @@
 @use "../abstracts/mixins" as *;
 @use "../abstracts/variables" as *;
-// Main Content
-.main-content {
-  max-width: 100%;
-  min-height: 100vh;
-  background-color: #060606;
-  border-radius: 10px;
-  opacity: 1; // 100%
-  position: relative;
-  overflow: hidden;
-}
 
 .recent-library {
   max-width: 100%;
@@ -60,6 +50,7 @@
         height: 40.41px;
         border-radius: 5px;
       }
+
       .icon.action-icons {
         all: unset;
         color: white;
@@ -81,6 +72,7 @@
         width: 40.41px;
         height: 40.41px;
       }
+
       .text {
         width: 45px;
         height: 19px;
@@ -100,6 +92,7 @@
         width: 40.41px;
         height: 40.41px;
       }
+
       .text {
         width: 41px;
         height: 19px;
@@ -185,27 +178,32 @@
     font-size: 6px;
     text-align: center;
   }
+
   .title-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     h3 {
       font-size: 10px;
       margin: 0;
       color: $light-gray-color;
     }
+
     span {
       font-size: 10px;
       color: $light-gray-color;
       opacity: 0.7;
     }
   }
+
   p {
     font-size: 10px;
     color: $light-gray-color;
     opacity: 0.6;
     margin: 2px 0 0 0;
   }
+
   figcaption {
     color: $light-gray-color;
     font-size: 1.1rem;
@@ -223,14 +221,20 @@
 }
 
 .playlist-table-container {
-  display: none; 
+  display: none;
   padding: 20px;
 }
 
 .main-content.is-flipped {
-  .recent-library__content { display: none; } 
-  .playlist-table-container { display: block; } 
+  .recent-library__content {
+    display: none;
+  }
+
+  .playlist-table-container {
+    display: block;
+  }
 }
+
 .icons-block-187.toggle-layout-btn {
   cursor: pointer;
   outline: 2px solid rgba(64, 60, 60, 0.329);
@@ -240,7 +244,8 @@
   color: #b3b3b3;
   font-family: sans-serif;
 
-  .table-header, .playlist-row {
+  .table-header,
+  .playlist-row {
     display: grid;
     grid-template-columns: 40px 2fr 1fr 50px 50px;
     align-items: center;
@@ -263,7 +268,10 @@
 
     &:hover {
       background-color: rgba(255, 255, 255, 0.05);
-      .song-name { color: #fff; }
+
+      .song-name {
+        color: #fff;
+      }
     }
 
     .col-title {
@@ -280,15 +288,26 @@
       .song-details {
         display: flex;
         flex-direction: column;
-        .song-name { color: #fff; font-weight: 500; font-size: 14px; }
-        .artist-name { font-size: 12px; }
+
+        .song-name {
+          color: #fff;
+          font-weight: 500;
+          font-size: 14px;
+        }
+
+        .artist-name {
+          font-size: 12px;
+        }
       }
     }
 
     .col-heart {
       font-size: 18px;
       filter: grayscale(1);
-      &:hover { filter: grayscale(0); }
+
+      &:hover {
+        filter: grayscale(0);
+      }
     }
   }
 }
@@ -316,61 +335,25 @@ $type-colors: (
 }
 
 @media screen and (max-width: 390px) {
+
   .aside,
   .fixed-container-77,
   .main-content {
     display: none;
   }
+
   .layout {
     display: block;
     padding: 0;
     margin: 0;
   }
-  .main-wrapper {
-    padding: 0;
-    width: 100%;
-    max-width: 100%; 
-    margin: 0;
-  }
+
   .mobile-header,
   .mobile-main {
     display: block;
     background-color: #060606;
     max-width: 100%;
     width: 100%;
-  }
-
-  .status-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 10px;
-    color: white;
-    font-weight: bold;
-    padding-top: 5px;
-    padding-right: 10px;
-  }
-  .status-left {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    padding-left: 25px;
-  }
-  .status-left img {
-    width: 12px;
-    height: auto;
-    opacity: 0.6;
-  }
-  .status-right {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    padding-left: 25px;
-  }
-  .status-right img {
-    width: 12px;
-    height: auto;
-    opacity: 0.6;
   }
 
   .search-section {
@@ -395,9 +378,11 @@ $type-colors: (
         outline: none;
       }
     }
+
     .plus-icon {
       background: transparent;
       border: none;
+
       img {
         width: 25px;
         height: auto;
@@ -412,6 +397,7 @@ $type-colors: (
     gap: 50px;
     padding: 10px 20px;
     color: white;
+
     .group-tag,
     .recent-filter {
       display: flex;
@@ -424,11 +410,13 @@ $type-colors: (
     width: 100%;
     margin: 0;
     max-width: none;
-    .content { 
+
+    .content {
       display: flex;
       flex-direction: column;
       width: 100%;
     }
+
     .accordion-item {
       display: flex;
       justify-content: space-between;

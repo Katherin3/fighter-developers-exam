@@ -1,105 +1,43 @@
 @use "../abstracts/variables.scss" as *;
+@use "../abstracts/mixins.scss" as *;
 
 .top-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 11px;
-    padding-bottom: 15px;
-    padding-top: 0px;
-    width: 100%;
-    height: 40.41px;
-    margin-bottom: 15px;
-    background-color: $dark-bg;
+    @include flex-align(space-between);
+    margin-top: 10px;
+    position: fixed;
+    top: 0;
+    left: $aside-width;
+    right: 0;
 
-    .main-nav ul {
-        display: flex;
-        gap: 15px; 
-        width: 773px;
-        height: 40.41px;
-        padding-top: 25px;
-        margin-bottom: 10px;
+    .main-nav ul.nav-buttons {
+        @include nav-list(row); // row for header
+    }
 
-        li a {
-            color: #a0a0a0;
-            text-align: center;
-            width: 210px;
-            height: 40.41px;
-            margin-bottom: 10px;
-            background-color: transparent;
-            transition: color 0.3s ease;
-            &:hover {
-                background-color: $gray-color;
-                color: white;
-            }
-
-
-            figure {
-                display: flex;
-                align-items: center;
-                gap: 10px; 
-            }
-
-            img {
-                width: 40.41px;
-                height: 40.41px;
-                padding: 8.42px;
-                &:hover {
-                    transform: scale(1.2);
-                    filter: brightness(1.5) invert(1);
-                }
-            }
-
-            figcaption {
-                font-size: 1.2rem;
-                letter-spacing: 3px;
-                text-transform: uppercase;
-            }
-        }
-
-        li.active a {
-            color: #ffffff; 
-            width: 210px;
-        }
-        li.discover a {
-            width: 210px;
-        }
-        li.serch a {
-            width: 350px;
-        }
+    .search-input {
+        color: $gray-color;
     }
 
     .actions {
-        display: flex;
-        align-items: center;
-        gap: 25px;
-        width: 722px;
-        height: 40.41px;
-        padding-top: 25px;
-        justify-content: flex-end;
+        ul {
+            @include flex-align(center);
+            gap: 20px;
 
-        .action-icons {
-            display: flex;
-            align-items: center;
-            gap: 20px; 
-            padding-top: 25px;
-
-            img {
-                width: 40.41px;
-                height: 40.41px;
-                opacity: 0.8;
-                &:hover { opacity: 1; }
+            li.active {
+                img {
+                    opacity: 1;
+                }
             }
-        }
 
-        .logo .user-logo {
-            width: 40.41px;
-            height: 40.41px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-        .logo { 
-            padding-top: 25px;
+            a {
+                img {
+                    opacity: 0.5;
+                    transition: 0.3s;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
         }
     }
 
