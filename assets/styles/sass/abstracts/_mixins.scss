@@ -54,7 +54,16 @@
 @mixin layout-title-h4() {
     font-family: "Satoshi-Medium", sans-serif;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 3%;
+    color: $light-gray-color;
+}
+
+@mixin layout-title-h5() {
+    font-family: "Satoshi-Regular", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
     line-height: 100%;
     letter-spacing: 3%;
     color: $light-gray-color;
