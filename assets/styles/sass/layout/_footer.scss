@@ -76,6 +76,10 @@ footer {
                 height: 0;
                 border: none;
             }
+
+            @media (max-width: 390px) {
+                display: none;
+            }
         }
 
         // Center: song info
@@ -148,8 +152,38 @@ footer {
 
 @media (max-width: 390px) {
     footer {
+        left: 10px;
+        bottom: 0;
+
         nav {
             display: block;
+        }
+
+        .player-wrapper {
+            .player-left {
+                display: none;
+            }
+
+            .player-center {
+                padding: 0;
+
+                .song-album {
+                    display: none;
+                }
+            }
+
+        }
+
+        .player-actions {
+
+            .btn-fav,
+            .btn-lyrics,
+            .btn-device,
+            .btn-more,
+            .btn-avatar,
+            .btn-menu {
+                display: none;
+            }
         }
     }
 }
