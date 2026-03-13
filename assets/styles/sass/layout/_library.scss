@@ -10,11 +10,11 @@
 .fixed-container-77 {
   position: static;
   width: 100%;
-  height: 62px;
+  height: 6.2rem;
   background-color: rgba(6, 6, 6, 0.8); // 060606 with 80% opacity
   border: 1px solid #000000; // Stroke
   box-sizing: border-box; // position: inside equivalent
-  border-radius: 5px 10px 5px 10px; // Mixed example
+  border-radius: 0.5rem 1rem 0.5rem 1rem; // Mixed example
   display: flex;
   align-items: center;
   justify-content: center; // Centers 104 inside 77
@@ -23,7 +23,7 @@
 // Inner Wrapper 104
 .inner-wrapper-104 {
   width: 100%;
-  height: 40.41px;
+  height: 4.041rem;
   display: flex;
   justify-content: space-between; // gap: auto equivalent
   align-items: center;
@@ -31,24 +31,24 @@
 
   // Left Group
   .left-group-106 {
-    width: 413.05px;
-    height: 40.41px;
+    width: 41.305rem;
+    height: 4.041rem;
     display: flex;
-    gap: 35px;
+    gap: 3.5rem;
     align-items: center;
 
     // Block 187
     .icons-block-187 {
-      width: 90.82px;
-      height: 40.41px;
+      width: 9.082rem;
+      height: 4.041rem;
       display: flex;
-      gap: 10px;
+      gap: 1rem;
       overflow: hidden; // clip content
 
       .icon {
-        width: 40.41px;
-        height: 40.41px;
-        border-radius: 5px;
+        width: 4.041rem;
+        height: 4.041rem;
+        border-radius: 0.5rem;
       }
 
       .icon.action-icons {
@@ -62,70 +62,70 @@
 
     // Block 85
     .info-block-85 {
-      width: 90.41px;
-      height: 40.41px;
+      width: 9.041rem;
+      height: 4.041rem;
       display: flex;
-      gap: 5px;
+      gap: 0.5rem;
       align-items: center;
 
       .icon {
-        width: 40.41px;
-        height: 40.41px;
+        width: 4.041rem;
+        height: 4.041rem;
       }
 
       .text {
-        width: 45px;
-        height: 19px;
+        width: 4.5rem;
+        height: 1.9rem;
         color: rgba(255, 255, 255, 0.455);
       }
     }
 
     // Block 63
     .info-block-63 {
-      width: 86.41px;
-      height: 40.41px;
+      width: 8.641rem;
+      height: 4.041rem;
       display: flex;
-      gap: 5px;
+      gap: 0.5rem;
       align-items: center;
 
       .icon {
-        width: 40.41px;
-        height: 40.41px;
+        width: 4.041rem;
+        height: 4.041rem;
       }
 
       .text {
-        width: 41px;
-        height: 19px;
+        width: 4.1rem;
+        height: 1.9rem;
         color: rgba(255, 255, 255, 0.455);
       }
     }
 
     // Block 34
     .single-icon-34 {
-      width: 40.41px;
-      height: 40.41px;
+      width: 4.041rem;
+      height: 4.041rem;
       display: flex;
       align-items: center;
       justify-content: center;
 
       .small-icon {
-        width: 20px;
-        height: 20px;
+        width: 2rem;
+        height: 2rem;
       }
     }
   }
 
   // Right Group 84
   .right-group-84 {
-    width: 50.41px;
-    height: 50.41px;
+    width: 5.041rem;
+    height: 5.041rem;
     display: flex;
     align-items: center;
     justify-content: center;
 
     .final-icon {
-      width: 30.84px;
-      height: 30.84px;
+      width: 3.084rem;
+      height: 3.084rem;
       color: white;
     }
   }
@@ -134,14 +134,14 @@
 .recent-library__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 1rem;
   width: 100%;
 
   .recent-library__item {
-    flex: 0 0 calc(12% - (10px * 7 / 8));
+    flex: 0 0 calc(12% - (1rem * 7 / 8));
     aspect-ratio: 1 / 1;
     position: relative;
-    border-radius: 10px;
+    border-radius: 1rem;
     cursor: pointer;
     background-color: #121212;
 
@@ -151,18 +151,18 @@
       height: 100%;
       object-fit: cover;
       transition: transform 0.3s ease;
-      border-radius: 10px;
+      border-radius: 1rem;
     }
 
     .icon-pin {
       position: absolute;
-      top: 10px;
-      right: 10px;
-      width: 18px;
-      height: 18px;
+      top: 1rem;
+      right: 1rem;
+      width: 1.8rem;
+      height: 1.8rem;
       z-index: 2;
       color: white;
-      filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+      filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.5));
     }
 
     &:hover img {
@@ -172,10 +172,10 @@
 
   .library-card__info {
     display: flex;
-    padding: 5px 0 0 0;
+    padding: 0.5rem 0 0 0;
     flex-direction: column;
     color: white;
-    font-size: 6px;
+    font-size: 0.6rem;
     text-align: center;
   }
 
@@ -185,23 +185,23 @@
     align-items: center;
 
     h3 {
-      font-size: 10px;
+      font-size: 1rem;
       margin: 0;
       color: $light-gray-color;
     }
 
     span {
-      font-size: 10px;
+      font-size: 1rem;
       color: $light-gray-color;
       opacity: 0.7;
     }
   }
 
   p {
-    font-size: 10px;
+    font-size: 1rem;
     color: $light-gray-color;
     opacity: 0.6;
-    margin: 2px 0 0 0;
+    margin: 0.2rem 0 0 0;
   }
 
   figcaption {
@@ -222,7 +222,7 @@
 
 .playlist-table-container {
   display: none;
-  padding: 20px;
+  padding: 2rem;
 }
 
 .main-content.is-flipped {
@@ -247,22 +247,22 @@
   .table-header,
   .playlist-row {
     display: grid;
-    grid-template-columns: 40px 2fr 1fr 50px 50px;
+    grid-template-columns: 4rem 2fr 1fr 5rem 5rem;
     align-items: center;
-    padding: 8px 16px;
-    font-size: 13px;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.3rem;
   }
 
   .table-header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     text-transform: uppercase;
-    font-size: 11px;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
   }
 
   .playlist-row {
-    border-radius: 4px;
+    border-radius: 0.4rem;
     transition: background 0.2s;
     cursor: pointer;
 
@@ -277,12 +277,12 @@
     .col-title {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 1.2rem;
 
       img {
-        width: 40px;
-        height: 40px;
-        border-radius: 4px;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 0.4rem;
       }
 
       .song-details {
@@ -292,11 +292,11 @@
         .song-name {
           color: #fff;
           font-weight: 500;
-          font-size: 14px;
+          font-size: 1.4rem;
         }
 
         .artist-name {
-          font-size: 12px;
+          font-size: 1.2rem;
         }
       }
     }
@@ -352,22 +352,22 @@ $type-colors: (
 
   .search-section {
     display: flex;
-    padding: 10px;
-    gap: 15px;
+    padding: 1rem;
+    gap: 1.5rem;
 
     .search-bar {
       flex: 1;
       background: #121212;
-      border-radius: 8px;
+      border-radius: 0.8rem;
       display: flex;
       align-items: center;
-      padding: 0 10px;
+      padding: 0 1rem;
 
       input {
         background: transparent;
         border: none;
         color: white;
-        padding: 10px;
+        padding: 1rem;
         width: 100%;
         outline: none;
       }
@@ -378,25 +378,25 @@ $type-colors: (
       border: none;
 
       img {
-        width: 25px;
+        width: 2.5rem;
         height: auto;
         opacity: 0.6;
-        padding-top: 5px;
+        padding-top: 0.5rem;
       }
     }
   }
 
   .filter-section {
     display: flex;
-    gap: 50px;
-    padding: 10px 20px;
+    gap: 5rem;
+    padding: 1rem 2rem;
     color: white;
 
     .group-tag,
     .recent-filter {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 0.8rem;
     }
   }
 
@@ -419,13 +419,13 @@ $type-colors: (
       border: none;
       border-bottom: 1px solid #1a1a1a;
       color: white;
-      font-size: 16px;
+      font-size: 1.6rem;
       cursor: pointer;
-      border-bottom: 1px solid #333333; // 1px solid with a darker shade for better visibility
-      padding: 20px;
+      border-bottom: 1px solid #333333;
+      padding: 2rem;
 
       img {
-        width: 15px;
+        width: 1.5rem;
         opacity: 0.6;
       }
     }

@@ -3,7 +3,7 @@
 
 .recent-searches__header {
     @include flex-align(space-between, center);
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 
     h2 {
         @include layout-title-h2();
@@ -12,7 +12,7 @@
 
 .recent-searches__list {
     @include flex-align(start, center);
-    gap: 30px;
+    gap: 3rem;
 
     .recent-searches__item {
         position: relative;
@@ -20,8 +20,8 @@
         button {
             background: #111111;
             border-radius: 50%;
-            width: 40px;
-            height: 40px;
+            width: 4rem;
+            height: 4rem;
             position: absolute;
             top: 0;
             right: 0;
@@ -36,27 +36,27 @@
         figcaption {
             color: $light-gray-color;
             font-size: 1.4rem;
-            margin-top: 15px;
+            margin-top: 1.5rem;
             text-align: center;
         }
     }
 
     .recent-searches__item:hover {
         img {
-            border-radius: 20px;
+            border-radius: 2rem;
         }
     }
 }
 
 .browse-all {
-    margin-top: 35px;
+    margin-top: 3.5rem;
 
     &__row {
-        margin: 20px 0;
+        margin: 2rem 0;
 
         &-header {
             @include flex-align(space-between, center);
-            margin: 20px 0;
+            margin: 2rem 0;
 
             h3 {
                 @include layout-title-h3();
@@ -65,19 +65,19 @@
 
         &-nav {
             img {
-                margin-left: 10px;
+                margin-left: 1rem;
             }
         }
 
         .browse-all__cards {
             @include flex-align(start, center);
-            gap: 15px;
-            margin-bottom: 20px;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
 
             .browse-card {
-                border-radius: 10px;
-                width: 170px;
-                height: 170px;
+                border-radius: 1rem;
+                width: 17rem;
+                height: 17rem;
                 position: relative;
                 overflow: hidden;
                 cursor: pointer;
@@ -88,19 +88,19 @@
 
                 span {
                     font-family: "Satoshi-Black", sans-serif;
-                    font-size: 20px;
+                    font-size: 2rem;
                     color: #ffffff;
                     font-weight: 900;
-                    padding: 20px 20px 0 20px;
+                    padding: 2rem 2rem 0 2rem;
                     display: block;
                 }
 
                 img {
                     position: absolute;
-                    right: -10px;
-                    bottom: -8px;
+                    right: -1rem;
+                    bottom: -0.8rem;
                     rotate: 30deg;
-                    border-radius: 5px;
+                    border-radius: 0.5rem;
                     transition: 0.5s;
                 }
 
