@@ -2,18 +2,15 @@
 
 ## Project Overview
 
-A fully responsive Spotify-inspired music streaming web application built as a team exam project. The app replicates Spotify's core UI/UX including a multi-page layout with a persistent sidebar, fixed footer player, and dark theme design system.
+Spotify - music streaming web application built as a team exam project. The app replicates Spotify's core UI/UX including a multi-page layout with a persistent sidebar, fixed footer player, and dark theme design system.
 
 **Live pages:** Home, Discover, Search, Library, Albums, Playlists, Song
 
 
 ## Team Contributions
-
-| Member | Responsibilities |
-|--------|-----------------|
-| გიორგი | — |
-| პავლე  | — |
-| ეკა    | — |
+- Giorgi
+- Pavel
+- Eka
 
 
 ## Tech Stack
@@ -89,17 +86,16 @@ All pages share a consistent fixed layout:
 
 ```
 ┌─────────────────────────────────────────────────┐
-│               TOP HEADER (65px)                  │
-│   Main Nav │ Search │ Action Buttons │ Friends   │
-├───────────┬─────────────────────────┬────────────┤
-│           │                         │            │
-│  LEFT     │     MAIN CONTENT        │   RIGHT    │
-│  ASIDE    │   (scrollable)          │   ASIDE    │
-│  (260px)  │                         │  (toggle)  │
-│           │                         │            │
-├───────────┴─────────────────────────┴────────────┤
-│               FOOTER PLAYER (90px)               │
-│   Controls │ Track Info │ Volume & Actions        │
+│               TOP HEADER                        │
+├───────────┬─────────────────────────┬───────────┤
+│           │                         │           │
+│  LEFT     │     MAIN CONTENT        │   RIGHT   │
+│  ASIDE    │   (scrollable)          │   ASIDE   │
+│  (260px)  │                         │  (toggle) │
+│           │                         │           │
+├───────────┴─────────────────────────┴───────────┤
+│               FOOTER PLAYER (90px)              │
+│                                                 │
 └─────────────────────────────────────────────────┘
 ```
 
@@ -115,13 +111,13 @@ All pages share a consistent fixed layout:
 - დავალებების განაწილებისთვის გამოვიყენეთ **GitHub Issues**.
 
 ### Team Communication
-- დღე გამოშვებით გვქონდა მოკლე შეხვედრები, სადაც ვათანხმებდით პროგრესს, ბლოკერებს და შემდეგ ნაბიჯებს.
+- დღის ბოლოს გამოშვებით გვქონდა მოკლე შეხვედრები, სადაც ვათანხმებდით პროგრესს, ბლოკერებს და შემდეგ ნაბიჯებს.
 
 ### Naming Convention
-- კლასების დასარქმევად გამოვიყენეთ **[kebab-case / BEM]** მიდგომა.
+- კლასების დასარქმევად გამოვიყენეთ **BEM** მიდგომა.
 
 ### Team Lead
-- გუნდს ჰყავდა **Team Lead: [სახელი]** — პასუხისმგებელი PR-ების გადახედვაზე, სტრუქტურული გადაწყვეტილებებზე და პროგრესის კოორდინაციაზე.
+- გუნდს ჰყავდა **Team Lead: [Eka]** — პასუხისმგებელი PR-ების გადახედვაზე, სტრუქტურული გადაწყვეტილებებზე და პროგრესის კოორდინაციაზე.
 
 
 ## Notes
