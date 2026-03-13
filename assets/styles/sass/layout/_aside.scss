@@ -76,6 +76,7 @@
 
     &__nav {
         @include flex-align(space-between, center);
+        margin-bottom: 44px;
     }
 
     &__buttons {
@@ -105,4 +106,29 @@
 
 #right-aside:target~main {
     right: $right-aside-width;
+}
+
+.friends-activity__list {
+    .friend-item {
+        @include flex-align(flex-start);
+        margin-bottom: 24px;
+        cursor: pointer;
+
+        &__info {
+            margin-left: 12px;
+        }
+
+        &__username {
+            @include layout-title-h5();
+            margin-bottom: 5px;
+        }
+
+        &__status {
+            @include layout-title-h4();
+        }
+
+        &__artist {
+            color: $gray-color;
+        }
+    }
 }

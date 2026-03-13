@@ -15,6 +15,10 @@ section {
       width: 40.41px;
       height: 40.41px;
       cursor: pointer;
+
+      @media (max-width: 390px) {
+        display: none;
+      }
     }
   }
 

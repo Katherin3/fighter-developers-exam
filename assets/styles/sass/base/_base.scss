@@ -48,14 +48,27 @@ main {
         background-color: $dark-bg;
         border-radius: 10px;
     }
+}
 
-    section {
+@media screen and (max-width: 390px) {
+    main {
 
-        @media screen and (max-width: 390px) {
+        top: 0;
+        left: 0;
+        right: 0;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        bottom: 0;
+        // overflow-y: auto;
+        transition: 0.3s;
+        // scrollbar-width: thin;
+        // scrollbar-color: #060606 transparent;
+
+        section {
             width: 390px;
             height: auto;
-            padding: 6px 15px;
+            padding: 6px 10px;
         }
-
     }
 }
