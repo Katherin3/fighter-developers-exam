@@ -8,32 +8,32 @@
 
 main:has(.albums-section) {
   background: linear-gradient(180deg, rgb(21, 22, 24) 0%, rgba(6, 6, 6, 1) 100%);
-  padding: 37px;
+  padding: 3.7rem;
 }
 
 .albums-section {
   @include flex-align(space-between, flex-start);
 
   .albums-section__list-card {
-    max-width: 978px;
+    max-width: 97.8rem;
     width: 100%;
     height: auto;
 
     header {
       h1 {
         color: #e0e0e0;
-        font-size: 36px;
+        font-size: 3.6rem;
         font-weight: 700;
-        margin-bottom: 20px;
+        margin-bottom: 2rem;
       }
 
       ul {
         display: flex;
-        margin-bottom: 20px;
-        gap: 10px;
+        margin-bottom: 2rem;
+        gap: 1rem;
 
         li {
-          font-size: 19px;
+          font-size: 1.9rem;
           display: flex;
           align-items: center;
           color: #898989;
@@ -45,11 +45,11 @@ main:has(.albums-section) {
       }
 
       .action-list {
-        gap: 14px;
+        gap: 1.4rem;
 
         img {
-          width: 40.41px;
-          height: 40.41px;
+          width: 4.041rem;
+          height: 4.041rem;
           cursor: pointer;
         }
 
@@ -69,14 +69,14 @@ main:has(.albums-section) {
         }
       }
 
-      padding: 0 10px 0 25px;
+      padding: 0 1rem 0 2.5rem;
       color: #898989;
 
       .col-num,
       .col-title,
       .col-duration,
       .col-fav {
-        padding: 16px 8px;
+        padding: 1.6rem 0.8rem;
         text-align: start;
       }
 
@@ -85,10 +85,10 @@ main:has(.albums-section) {
         flex-direction: column;
 
         .song-name {
-          font-size: 16px;
+          font-size: 1.6rem;
           font-weight: 500;
           color: rgba(224, 224, 224, 1);
-          margin-bottom: 4px;
+          margin-bottom: 0.4rem;
         }
       }
 
@@ -101,12 +101,12 @@ main:has(.albums-section) {
   .albums-section__main-page {
     width: auto;
     height: auto;
-    margin: 0 30px 86px 38px;
+    margin: 0 3rem 8.6rem 3.8rem;
 
     img {
-      width: 400px;
-      height: 400px;
-      border-radius: 10px;
+      width: 40rem;
+      height: 40rem;
+      border-radius: 1rem;
     }
 
     .singer-list {
@@ -118,17 +118,17 @@ main:has(.albums-section) {
         display: flex;
         align-items: center;
         color: rgba(137, 137, 137, 1);
-        font-size: 16px;
+        font-size: 1.6rem;
         font-weight: 400;
         border-radius: 0;
-        padding: 15px 0;
+        padding: 1.5rem 0;
         border: 0;
 
         img {
-          width: 61px;
-          height: 61px;
+          width: 6.1rem;
+          height: 6.1rem;
           border-radius: 50%;
-          margin-right: 20px;
+          margin-right: 2rem;
           margin-left: 0;
         }
       }
