@@ -302,12 +302,7 @@
     }
 
     .col-heart {
-      font-size: 1.8rem;
-      filter: grayscale(1);
-
-      &:hover {
-        filter: grayscale(0);
-      }
+      font-size: 18px;
     }
   }
 }
