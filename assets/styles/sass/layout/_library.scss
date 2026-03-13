@@ -303,8 +303,6 @@
 
     .col-heart {
       font-size: 18px;
-      filter: grayscale(1);
-
       &:hover {
         filter: grayscale(0);
       }
