@@ -9,9 +9,9 @@
     display: none;
 
     &:checked+.aside {
-        width: 75px;
-        max-width: 75px;
-        padding: 11px;
+        width: 7.5rem;
+        max-width: 7.5rem;
+        padding: 1.1rem;
 
         .aside__nav__list {
 
@@ -41,11 +41,11 @@
     top: 0;
     bottom: 0;
     width: $aside-width;
-    padding: 11px;
+    padding: 1.1rem;
 
     .aside__nav__list {
         a {
-            padding: 10px 0 10px 20px;
+            padding: 1rem 0 1rem 2rem;
         }
     }
 
@@ -61,13 +61,13 @@
 
 .right-aside {
     position: fixed;
-    right: 10px;
+    right: 1rem;
     top: $header-height;
-    bottom: calc($footer-height + 10px);
-    width: calc($right-aside-width - 15px);
-    padding: 20px;
+    bottom: calc($footer-height + 1rem);
+    width: calc($right-aside-width - 1.5rem);
+    padding: 2rem;
     border: 1px solid $tag-bg;
-    border-radius: 10px;
+    border-radius: 1rem;
     display: none;
 
     h4 {
@@ -76,12 +76,12 @@
 
     &__nav {
         @include flex-align(space-between, center);
-        margin-bottom: 44px;
+        margin-bottom: 4.4rem;
     }
 
     &__buttons {
         @include flex-align(flex-start, center);
-        gap: 30px;
+        gap: 3rem;
 
         img {
             transition: 0.3s;
@@ -111,16 +111,16 @@
 .friends-activity__list {
     .friend-item {
         @include flex-align(flex-start);
-        margin-bottom: 24px;
+        margin-bottom: 2.4rem;
         cursor: pointer;
 
         &__info {
-            margin-left: 12px;
+            margin-left: 1.2rem;
         }
 
         &__username {
             @include layout-title-h5();
-            margin-bottom: 5px;
+            margin-bottom: 0.5rem;
         }
 
         &__status {
