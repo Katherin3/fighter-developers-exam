@@ -5,15 +5,14 @@
 @use "../components/tags" as *;
 @use "../layout/aside" as *;
 
-.main-content {
-    // დიზაინის ზუსტი გრადიენტი: ყავისფერიდან შავისკენ
+.main-content-podcast {
     background: linear-gradient(to bottom, #A5602A 0%, #060606 100%);
     min-height: 100vh;
     padding: 40px;
 }
 
 .podcast-layout {
-    display: flex; // საიდბარი და ეპიზოდები გვერდიგვერდ
+    display: flex; 
     gap: 60px;
     max-width: 1280px;
     margin: 0 auto;
@@ -31,7 +30,6 @@
                 align-items: center;
                 gap: 15px;
 
-                // ჰედერში დივების გარშემო მონახაზი (border)
                 .follow-btn, .rating {
                     background: transparent;
                     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -45,7 +43,7 @@
                     gap: 8px;
                 }
                 
-                img { width: 24px; opacity: 0.7; cursor: pointer; } // Dots icon
+                img { width: 24px; opacity: 0.7; cursor: pointer; } 
             }
         }
     }
@@ -54,7 +52,7 @@
 .episodes-list {
     .episodes-header-row {
         display: flex;
-        justify-content: space-between; // "All Episodes" მარცხნივ, აიკონები მარჯვნივ
+        justify-content: space-between; 
         align-items: center;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         padding-bottom: 15px;
@@ -70,7 +68,7 @@
         .action-item {
             display: flex;
             align-items: center;
-            gap: 8px; // აიკონი და ტექსტი ერთ ხაზზე
+            gap: 8px; 
             color: #b3b3b3;
             font-size: 1.3rem;
             img { width: 18px; opacity: 0.7; }
@@ -92,7 +90,7 @@
         gap: 24px;
 
         .episode-img {
-            width: 120px; // სურათის ზომა
+            width: 120px; 
             height: 120px;
             border-radius: 8px;
             object-fit: cover;
@@ -112,7 +110,7 @@
     .episode-actions {
         display: flex;
         align-items: center;
-        gap: 25px; // თანაბარი დაცილება აიკონებს შორის
+        gap: 25px; 
         margin-top: 15px;
 
         .play-btn {
@@ -147,7 +145,7 @@
         .icon-btn {
             background: none; border: none; padding: 0; cursor: pointer;
             img { 
-                width: 22px; // ყველა აიკონი ერთი ზომის
+                width: 22px; 
                 height: 22px; 
                 opacity: 0.6; 
                 transition: 0.3s; 
