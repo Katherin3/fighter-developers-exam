@@ -50,35 +50,37 @@ fighter-developers-exam/
 
 ## Pages & Features
 
-### Home (`index.html`)
+### Home (`index.html`) [Pavle]
 - Category filter tabs: All, Music, Podcasts, Audiobooks
 - Horizontally scrollable card sections: Made For You, Top Mixes, Favorite Artists, Albums, Audiobooks, Podcasts, Episodes
 
-### Albums (`pages/albums.html`)
+### Albums (`pages/albums.html`)  [Pavle]
 - Full album metadata (artist, year, track count, total duration)
 - Track listing table with number, title, duration, and favorite columns
 - Action buttons: Play, Shuffle, Add, Add to Playlist, Download, Share
 
-### Playlist (`pages/play-list.html`)
+### Playlist (`pages/play-list.html`)  [Pavle]
 - Extended track table including Album column
 - Track thumbnails inline in table rows
 - Genre tags and featured artist info
 
-### Discover (`pages/discover.html`)
+### Discover (`pages/discover.html`)  [Eka]
 - Horizontal genre filter bar: Music, EDM, Indie, Pop, Rock, Alt Rock, Country, R&B, Hip-Hop, Podcast, Audiobooks
 - Featured content cards with carousel navigation
 
-### Search (`pages/search.html`)
+### Search (`pages/search.html`)  [Eka]
 - Recent Searches with quick-remove buttons
 - Browse All grid: color-coded category cards for Discover & Genres sections
 
-### Library (`pages/library.html`)
+### Library (`pages/library.html`)  [Giorgi]
 - Toggle between grid and list view via JS
 
-### Song (`pages/song.html`)
+### Song (`pages/song.html`)  [Pavle]
 - Song detail card with artwork and metadata
 - Embedded lyrics with Translate, Comments, and Text Size options
 
+### Podcast (`pages/podcast.html`)  [Giorgi]
+- podcast page with list of eposodes
 
 ## Layout
 
