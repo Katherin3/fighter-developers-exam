@@ -1769,6 +1769,11 @@ main:has(.albums-section) {
 .discover-section__cards article .discover-section_description div img {
   cursor: pointer;
 }
+@media screen and (min-width: 390px) {
+  .discover-section__cards article {
+    display: none;
+  }
+}
 
 @keyframes loading {
   0% {
